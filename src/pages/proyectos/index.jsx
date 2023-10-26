@@ -74,7 +74,7 @@ const index = () => {
               >  
           <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 className="text-3xl font-bold text-white font-dmserif">
-              Mokcup
+            Mockups
             </h1>
             <p className="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
               Aqui encontrarás Proyectos de producto y diseño final.
@@ -99,7 +99,7 @@ const index = () => {
               >
           <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 className="text-3xl font-bold text-white font-dmserif">
-              Fotografìa
+            Fotografía
             </h1>
             <p className="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
               Aquì encontràs proyectos de ediciòn de fotografias.

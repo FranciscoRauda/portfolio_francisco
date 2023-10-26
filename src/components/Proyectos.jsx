@@ -12,7 +12,7 @@ const proyectos = () => {
     <section className="bg-black h-[50rem] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[5rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem] ">
-          proyectos
+          Proyectos
         </h1>
       </div>
 

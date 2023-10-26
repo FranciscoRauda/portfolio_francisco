@@ -14,19 +14,19 @@ export const Sobremi = () => {
       <div className="max-w-[80rem] mx-auto grid grid-cols-1 px-20 lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10">
         <div>
           <h1 className="text-4xl font-bold text-center bg-white-200 p">
-            Hola Cónoceme
+          Hola,conozcámonos
           </h1>
           <p className="mt-10 text-justify">
-            ¡Hola! Mi nombre es Daniel mejia y soy diseñador gráfico web,
+            Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
             bienvenido, será de mi agrado compartir contigo algunos de los
             proyectos que he realizado a lo largo de mi formación académica y
-            laboral, en el cual pongo en practica mis conocimientos y
+            laboral, en el cual pongo en práctica mis conocimientos y
             creatividad para realizar proyectos altamente creativos y
-            funcionales. <br></br>
+            Funcionales. <br></br>
             Los programas en los cuales realizo mis proyectos son adobe
-            Photoshop, ilustrador, para la área web utilizo figma, entre otros
-            conocimientos en el área web son html, css, materialize, bootrap,
-            woordpress, js, los cuales son conocimientos técnicos que me ayudan
+            Photoshop, ilustrador, para el área web, utilizo Figma, entre otros
+            conocimientos en el área web son HTML, CSS, materialize, Bootstrap,
+            WordPress, JS, los cuales son conocimientos técnicos que me ayudan
             a realizar todos mis proyectos.
           </p>
         </div>

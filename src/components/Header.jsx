@@ -16,7 +16,7 @@ const Header = () => {
           />
         </div>
         <div>
-          <h1 className="mt-5 text-5xl font-bold text-center lg:mt-0 lg:text-left">Hola mi nombre es Francisco Daniel soy diseñador web. 💻</h1>
+          <h1 className="mt-5 text-5xl font-bold text-center lg:mt-0 lg:text-left">Hola mi nombre es Francisco Daniel, soy diseñador web. 💻</h1>
         </div>
       </div>
     </section>

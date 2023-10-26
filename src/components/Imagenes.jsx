@@ -9,7 +9,7 @@ const Imagenes = () => {
     <section className="items-center text-white bg-black ">
       <div>
         <h2 className="text-center pt-[5rem] pt font-bold tmtext-3xl bg-white-200 ytext-center text-[4rem]">
-          Imagenes
+        Imágenes
         </h2>
       </div>
 
