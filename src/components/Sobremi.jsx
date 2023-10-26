@@ -17,7 +17,7 @@ export const Sobremi = () => {
           Hola,conozcámonos
           </h1>
           <p className="mt-10 text-justify">
-            Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
+          Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
             bienvenido, será de mi agrado compartir contigo algunos de los
             proyectos que he realizado a lo largo de mi formación académica y
             laboral, en el cual pongo en práctica mis conocimientos y

@@ -53,7 +53,7 @@ const NavBar = () => {
                 className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 md:dark:bg-transparent"
                 href="/contacto"
               >
-                Contáctame
+               Contáctame
               </Link>
             </li>
           </ul>
