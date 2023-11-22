@@ -5,10 +5,16 @@ import web2 from "/public/img/Deportes.png";
 import doc from "/public/img/Doc.png";
 import tienda from "/public/img/tienda.jpg";
 import web4 from "/public/img/web4.png";  
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 
 
 const index = () => {
+  const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
+  
   return (
     <section className="bg-black h-[70rem] items-center">
       <div className="font-bold text-center text-white ">
@@ -28,40 +34,78 @@ const index = () => {
           />
         </div>
 
+        <>
+        
+      <button type="button" onClick={() => setOpen(true)}>
+        Open Lightbox <Image
+          src={web2}
+          width={350}
+          height={350}
+          alt="Picture of the author"
+          className="rounded"
+            />
+      </button>
 
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={web2}
-           
-            alt="Picture of the author"
-          />
-        </div>
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={[
+          { src: "/img/deporte.png" },
+          { src: "/img/deporte2.jpg" },
+          
+        ]}
+      />
+      
 
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={doc}
-           
-            alt="Picture of the author"
-          />
-        </div>
-        <div className="w-full h-full ">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={tienda}
-           
-            alt="Picture of the author"
-          />
-        </div>
-        <div className="w-full h-full ">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={web4}
-           
-            alt="Picture of the author"
-          />
-        </div>
+      
+    </>
+        {/* Bloque 2 */}
+      <button type="button" onClick={() => setOpen2(true)}>
+        Open Lightbox 2
+        <Image
+          src={doc}
+          width={350}
+          height={350}
+          alt="Otra descripción de la imagen"
+          className="rounded"
+        />
+      </button>
+
+      <Lightbox
+        open={open2}
+        close={() => setOpen2(false)}
+        slides={[
+          { src: "/img/doc1.png" },
+          { src: "/img/doc2.jpg" },
+        ]}
+
+        />
+
+        {/* Bloque 3  */}
+      <button type="button" onClick={() => setOpen3(true)}>
+        Open Lightbox 2
+        <Image
+          src={web4}
+          width={350}
+          height={350}
+          alt="Otra descripción de la imagen"
+          className="rounded"
+        />
+      </button>
+
+      <Lightbox
+        open={open3}
+        close={() => setOpen3(false)}
+        slides={[
+          { src: "/img/web4.png" },
+          { src: "/img/web4.2.png" },
+        ]}
+
+        />
+
+     
+        
+        
 
 
 
