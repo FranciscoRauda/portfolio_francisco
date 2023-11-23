@@ -76,7 +76,7 @@ const index = () => {
         close={() => setOpen2(false)}
         slides={[
           { src: "/img/doc1.png" },
-          { src: "/img/doc2.jpg" },
+          { src: "/img/nutri2.png" },
         ]}
 
         />
