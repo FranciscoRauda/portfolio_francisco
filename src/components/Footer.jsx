@@ -10,7 +10,7 @@ const footers = () => {
         </div>
         {/* Enlaces de Redes Sociales */}
         <div>
-          <a href="#" className="text-white hover:text-gray-500">
+          <a href="https://www.facebook.com/DanielDesing20" className="text-white hover:text-gray-500">
             Facebook
           </a>
           <span className="mx-2">•</span>
