@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import image1 from "/public/img/image1.png";
 import adobe from  "/public/img/adobe.png";
+import laptop from "/public/img/laptop.jpg";
 import imagen3 from "/public/img/imagen3.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -15,7 +16,7 @@ export const Seccion1 = () => {
      <>
       <button type="button" onClick={() => setOpen(true)}>
         Open Lightbox <Image
-          src={image1}
+          src={laptop}
           width={350}
           height={350}
           alt="Picture of the author"
@@ -27,9 +28,9 @@ export const Seccion1 = () => {
         open={open}
         close={() => setOpen(false)}
         slides={[
-          { src: "./img/image1.png" },
-          { src: "./img/adobe.png" },
-          { src: "./img/imagen3.png" },
+          { src: "./img/laptop.jpg" },
+          { src: "./img/ramdom.png" },
+          { src: "./img/TRAILER.png" },
         ]}
       />
     </>
