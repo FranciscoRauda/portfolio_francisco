@@ -10,13 +10,13 @@ import{SiFigma} from "react-icons/si";
 
 export const Sobremi = () => {
   return (
-    <section className="px-4 text-center text-white bg-black ">
+    <section className="px-4 text-center text-white bg-black animate-fade">
       <div className="max-w-[80rem] mx-auto grid grid-cols-1 px-20 lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10">
         <div>
-          <h1 className="text-4xl font-bold text-center bg-white-200 p">
+          <h1 className="text-4xl font-bold text-center bg-white-200 p animate-fade-right">
           Hola,conozcámonos
           </h1>
-          <p className="mt-10 text-justify">
+          <p className="mt-10 text-justify animate-fade-right">
           Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
             bienvenido, será de mi agrado compartir contigo algunos de los
             proyectos que he realizado a lo largo de mi formación académica y
@@ -32,7 +32,7 @@ export const Sobremi = () => {
         </div>
         <div>
           <h1 className="text-4xl font-bold text-white">Habilidades</h1>
-          <div className="grid grid-cols-2 gap-10 mt-10 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-10 mt-10 md:grid-cols-3 lg:grid-cols-4 animate-fade-left ">
             <div className="flex flex-col items-center justify-center transition cursor-pointer hover:translate-y-2">
               <IoLogoHtml5 className="content-center text-[4rem] text-black bg-white p-1 rounded-sm"></IoLogoHtml5>
               <h2 className="font-bold">HTML</h2>

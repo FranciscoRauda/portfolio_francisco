@@ -9,7 +9,7 @@ import tienda from "/public/img/tienda.jpg";
 
 const proyectos = () => {
   return (
-    <section className="bg-black h-[50rem] items-center">
+    <section className="bg-black h-[50rem] items-center animate-fade-right animate-once animate-duration-[600ms] animate-delay-[90ms]">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[5rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem] ">
           Proyectos

@@ -10,7 +10,7 @@ import "yet-another-react-lightbox/styles.css";
 export const Seccion1 = () => {
   const [open, setOpen] = React.useState(false);
   return (
-     <section className="items-center text-center text-white bg-black">
+     <section className="items-center text-center text-white bg-black animate-fade-up animate-once animate-duration-[600ms] animate-delay-[90ms]">
      <div className="items-center text-center ">
         
      <>
