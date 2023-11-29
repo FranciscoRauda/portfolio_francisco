@@ -171,7 +171,7 @@ const index = () => {
         close={() => setOpen5(false)}
         slides={[
           { src: "/img/INICIO.png" },
-          { src: "/img/paneldeventas.png" },
+          { src: "/img/Paneldeventas.png" },
           { src: "/img/INVENTARIO.png" },
           { src: "/img/TIENDA.png" },
         ]}
