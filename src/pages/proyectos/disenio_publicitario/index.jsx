@@ -89,7 +89,7 @@ const index = () => {
         open={open2}
         close={() => setOpen2(false)}
         slides={[
-          { src: "/img/SOCIALMEDIA.Png"  },
+          { src: "/img/SOCIALMEDIA.png"  },
           
         ]}
       />
