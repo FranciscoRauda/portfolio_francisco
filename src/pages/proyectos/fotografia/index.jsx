@@ -8,6 +8,7 @@ import Auto from "/public/img/Auto.png";
 
 
 const index = () => {
+  
   return (
     <section className="bg-black h-[70rem] items-center">
       <div className="font-bold text-center text-white ">

@@ -3,7 +3,7 @@ import React from 'react'
 const footers = () => {
   const correoDestino = 'raudamejia08@outlook.com';
   return (
-    <footer className="py-4 text-white bg-gray-800 ">
+    <footer className="py-4 text-white bg-gray-800 sm:flex-row md:flex-col lg:flex-row-reverse xl:flex-row">
       <div className="flex items-center justify-center space-x-4">
         <div >
         <img src="img/logo.png" className="h-12 min-h-min" alt="Flowbite Logo" />
