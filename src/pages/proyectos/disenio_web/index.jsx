@@ -114,11 +114,10 @@ const index = () => {
                   open={open5}
                   close={() => setOpen5(false)}
                   slides={[
-                    { src: "/img/INICIO.png" },
-                    { src: "/img/INICIO.png" },
+                    { src: "/img/INICIO.png" }, 
                     { src: "/img/INVENTARIO.png" },
                     { src: "/img/TIENDA.png" },
-                    { src: "/img/paneldeventas.png" },
+                    { src: "/img/ventas.png"},
                   ]}
                 />
               </button>
