@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="bg-black border-gray-200">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <Link href="/">
-          <img src="img/logo.png" className="h-12 min-h-min" alt="Flowbite Logo" />
+          <img src="/img/logo.png" className="h-12 min-h-min" alt="Flowbite Logo" />
         </Link>
         <button
           data-collapse-toggle="navbar-solid-bg"

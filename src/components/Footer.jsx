@@ -6,7 +6,7 @@ const footers = () => {
     <footer className="py-4 text-white bg-gray-800 sm:flex-row md:flex-col lg:flex-row-reverse xl:flex-row">
       <div className="flex items-center justify-center space-x-4">
         <div >
-        <img src="img/logo.png" className="h-12 min-h-min" alt="Flowbite Logo" />
+        <img src="/img/logo.png" className="h-12 min-h-min" alt="Flowbite Logo" />
         </div>
         {/* Enlaces de Redes Sociales */}
         <div>
