@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -68,7 +67,10 @@ const index = () => {
               <Lightbox
                 open={open3}
                 close={() => setOpen3(false)}
-                slides={[{ src: "/img/doc1.png" }]}
+                slides={[{ src: "/img/Doc.png" },
+                        { src: "/img/doc2.jpg" }
+              
+              ]}
               />
             </div>
 

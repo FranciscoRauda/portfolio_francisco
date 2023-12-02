@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import mock3 from "/public/img/mock-2.jpg";
-import gorra from "/public/img/CAPSSMILE.jpg";
-import mockp from "/public/img/Mockup-p.jpg";
-import camisas from "/public/img/camisas-m.jpg";  
-
-
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const index = () => {
+  const [open1, setOpen1] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
+  const [open4, setOpen4] = React.useState(false);
+
   return (
     <section className="bg-black h-[70rem] items-center">
       <div className="font-bold text-center text-white ">
@@ -15,50 +16,80 @@ const index = () => {
           Mock-up
         </h1>
       </div>
+      <div className="grid grid-cols-1 gap-5 mt-10 md:grid-cols-1 lg:grid-cols-1">
+        <div class="flex items-center justify-center tex-center ">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-2 ">
+            <div>
+              <button type="button" onClick={() => setOpen1(true)}>
+                <Image
+                  class="h-50 max-w-full "
+                  src="/img/cover-mock2.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
 
-      <div className="max-w-[80rem] mx-auto grid grid-cols-4 px-10 lg:grid-cols-4 items-center py-[10rem] gap-4  ">
+              <Lightbox
+                open={open1}
+                close={() => setOpen1(false)}
+                slides={[{ src: "/img/mock-2.jpg" }]}
+              />
+            </div>
+            <div>
+              <button type="button" onClick={() => setOpen2(true)}>
+                <Image
+                  className="object-cover h-full rounded-lg"
+                  class="h-50 max-w-full object"
+                  width={400}
+                  height={400}
+                  src="/img/cover-vaso.png"
+                ></Image>
+              </button>
+              <Lightbox
+                open={open2}
+                close={() => setOpen2(false)}
+                slides={[{ src: "/img/Mockup-p.jpg" }]}
+              />
+            </div>
 
-      <div className="items-center w-full h-full text-center ">
-          <Image
-            className="object-cover h-full rounded-lg"
-            src={mock3}
-           
-            alt="Picture of the author"
-          />
+            <div>
+              <button type="button" onClick={() => setOpen3(true)}>
+                <Image
+                  class="h-50 max-w-full rounded-lg"
+                  src="/img/smile-cover.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open3}
+                close={() => setOpen3(false)}
+                slides={[{ src: "/img/CAPSSMILE.jpg" }]}
+              />
+            </div>
+
+            <div>
+              <button type="button" onClick={() => setOpen4(true)}>
+                <Image
+                  class="h-50 w-49 max-w-full rounded-lg"
+                  src="/img/camisas-cover.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open4}
+                close={() => setOpen4(false)}
+                slides={[{ src: "/img/camisas-m.jpg" }]}
+              />
+            </div>
+
+            <div></div>
+          </div>
         </div>
-
-
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={gorra}
-           
-            alt="Picture of the author"
-          />
-        </div>
-
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={mockp}
-           
-            alt="Picture of the author"
-          />
-        </div>
-        <div className="w-full h-full ">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={camisas}
-           
-            alt="Picture of the author"
-
-          />
-        </div>
-
-
-
-
-
       </div>
     </section>
   );
