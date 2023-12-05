@@ -19,7 +19,7 @@ const NavBar = () => {
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <a href="javascript:void(0)">
                         <img
-                            src="/Img/logo.png"
+                            src="/img/logo.png"
                             width={200}
                             height={200}
                             alt="Float UI logo"
