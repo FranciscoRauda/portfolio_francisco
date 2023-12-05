@@ -1,34 +1,64 @@
 import React from 'react'
 
 const footers = () => {
-  const correoDestino = 'raudamejia08@outlook.com';
-  return (
-    <footer className="py-4 text-white bg-gray-800 sm:flex-row md:flex-col lg:flex-row-reverse xl:flex-row">
-      <div className="flex items-center justify-center space-x-4">
-        <div >
-        <img src="/img/logo.png" className="h-12 min-h-min" alt="Flowbite Logo" />
-        </div>
-        {/* Enlaces de Redes Sociales */}
-        <div>
-          <a href="https://www.facebook.com/DanielDesing20" className="text-white hover:text-gray-500">
-            Facebook
-          </a>
-          <span className="mx-2">•</span>
-          <a href="#" className="text-white hover:text-gray-500">
-              Instagram
-          </a>
-          {/* Agrega más enlaces según sea necesario */}
-        </div>
 
-        {/* Información de contacto a la derecha */}
-        <div className="ml-auto">
-           <p><a href={`mailto:${correoDestino}`} className="text-white hover:text-gray-500" >   Correo: raudamejia08@outlook.com </a> </p> 
-          <p>Teléfono: (503) 77960054</p>
-          {/* Agrega más información de contacto según sea necesario */}
-        </div>
-      </div>
-    </footer>
-  )
+
+
+    const footerNavs = [
+        {
+            href: 'javascript:void()',
+            name: 'Terms'
+        },
+        {
+            href: 'javascript:void()',
+            name: 'License'
+        },
+        {
+            href: 'javascript:void()',
+            name: 'Privacy'
+        },
+        {
+            href: 'javascript:void()',
+            name: 'About us'
+        }
+    ]
+    return (
+        <footer className="pt-10 bg-slate-800">
+            <div className="max-w-screen-xl px-4 mx-auto text-gray-600 md:px-8">
+                <div className="justify-between sm:flex">
+                    <div className="space-y-6">
+                        <img src="/img/logo.png" className="w-32" />
+                        <p className="max-w-md text-white">
+                            "Nunca es tarde para diseñar tus sueños"
+                        </p>
+                        
+                    </div>
+                    <div className="mt-6">
+                        <p className="font-semibold text-white">Sígueme en mis redes sociales</p>
+                        <div className="flex items-center gap-3 mt-3 text-white sm:block">
+                            <a href="https://www.facebook.com/DanielDesing20 " target="_blank"  >
+                              Facebook
+                            </a>
+                            <a href="https://www.instagram.com/danielmejia_disenadorweb/" className="block mt-0 sm:mt-3"  target="_blank">
+                                Instagram
+                            </a>
+                            <a href="mailto:raudamejia08@outlook.com" className="block mt-0 sm:mt-3"  target="_blank">
+                                Correo : raudamejia08@outlook.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="py-10 mt-10 text-white border-t md:text-center">
+                    <p>© 2023 Daniel Mejia</p>
+                </div>
+            </div>
+        </footer>
+    )
 }
+  
+
+
+  
+
 
 export default footers
