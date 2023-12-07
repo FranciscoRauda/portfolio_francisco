@@ -89,7 +89,7 @@ const index = () => {
               <Lightbox
                 open={open4}
                 close={() => setOpen4(false)}
-                slides={[{ src: "/img/zapato.jpg" }, ,]}
+                slides={[{ src: "/img/zapato.png" }]}
               />
             </div>
 
