@@ -9,11 +9,13 @@ const index = () => {
   const [open3, setOpen3] = React.useState(false);
   const [open4, setOpen4] = React.useState(false);
   const [open5, setOpen5] = React.useState(false);
+  const [open6, setOpen6] = React.useState(false);
+  
   return (
     <section className="bg-black h-[70rem] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
-          proyectos web
+          proyectos publicitario
         </h1>
       </div>
 
@@ -24,7 +26,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen1(true)}>
                 <Image
                   className="max-w-full h-50 "
-                  src="/img/zapateria-cover.png"
+                  src="/img/reloj.jpg"
                   width={400}
                   height={400}
                   alt=""
@@ -34,43 +36,43 @@ const index = () => {
               <Lightbox
                 open={open1}
                 close={() => setOpen1(false)}
-                slides={[{ src: "/img/ZAPATERIA.png" }]}
+                slides={[{ src: "/img/reloj.jpg" }]}
               />
             </div>
+            
             <div>
               <button type="button" onClick={() => setOpen2(true)}>
                 <Image
-                  className="object-cover h-full rounded-lg"
-                  class="max-w-full h-50 object"
+                  className="max-w-full h-50 "
+                  src="/img/volvo.png"
                   width={400}
                   height={400}
-                  src="/img/Deportivo-cover.png"
+                  alt="logo"
                 ></Image>
               </button>
+
               <Lightbox
                 open={open2}
                 close={() => setOpen2(false)}
-                slides={[{ src: "/img/Deportivo.png" }]}
+                slides={[{ src: "/img/volvo.png" }]}
               />
             </div>
+           
 
             <div>
               <button type="button" onClick={() => setOpen3(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50"
-                  src="/img/doc-cover.png"
+                  src="/img/coverfull.jpg"
                   width={400}
                   height={400}
-                  alt=""
+                  alt="#"
                 ></Image>
               </button>
               <Lightbox
                 open={open3}
                 close={() => setOpen3(false)}
-                slides={[{ src: "/img/Doc.png" },
-                        { src: "/img/doc2.jpg" }
-              
-              ]}
+                slides={[{ src: "/img/full1.jpg" }]}
               />
             </div>
 
@@ -78,7 +80,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen4(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50 w-49"
-                  src="/img/comproyse-cover.png"
+                  src="/img/coverz.png"
                   width={400}
                   height={400}
                   alt=""
@@ -87,27 +89,15 @@ const index = () => {
               <Lightbox
                 open={open4}
                 close={() => setOpen4(false)}
-                slides={[
-                  { src: "/img/comproyse.jpg" },
-                  { src: "/img/comproyse2.jpg" },
-                ]}
+                slides={[{ src: "/img/zapato.jpg" }, ,]}
               />
-              <p className="text-center text-white">
-                <a
-                  href="https://comproyse.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ir al sitio
-                </a>
-              </p>
             </div>
 
             <div>
               <button type="button" onClick={() => setOpen5(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50"
-                  src="/img/sivar-cover.png"
+                  src="/img/cover-pollo.png"
                   width={400}
                   height={400}
                   alt=""
@@ -115,17 +105,27 @@ const index = () => {
                 <Lightbox
                   open={open5}
                   close={() => setOpen5(false)}
-                  slides={[
-                    { src: "/img/INICIO.png" }, 
-                    { src: "/img/INVENTARIO.png" },
-                    { src: "/img/TIENDA.png" },
-                    { src: "/img/ventas.png"},
-                  ]}
+                  slides={[{ src: "/img/pollopublicidad.png" }]}
                 />
               </button>
             </div>
 
-            
+            <div>
+              <button type="button" onClick={() => setOpen6(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50"
+                  src="/img/AUDIFONOS-cover.jpg"
+                  width={400}
+                  height={400}
+                  
+                ></Image>
+                <Lightbox
+                  open={open6}
+                  close={() => setOpen6(false)}
+                  slides={[{ src: "/img/AUDIFONOS.jpg" }]}
+                />
+              </button>
+            </div>
 
             <div></div>
           </div>

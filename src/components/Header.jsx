@@ -5,21 +5,23 @@ import Perfil from "/public/img/foto-profesional.jpg";
 const Header = () => {
   return (
     <section className="text-white bg-black ">
-      <div className="max-w-[80rem] mx-auto grid grid-cols-1 px-10 lg:grid-cols-2 items-center py-[5rem]">
-        <div>
-          <Image
-            src={Perfil}
-            width={500}
-            height={500}
-            alt="Picture of the author"
-            className="rounded-full"
-          />
-        </div>
-        <div>
-          <h1 className="mt-5 text-5xl font-bold text-center lg:mt-0 lg:text-left">Hola mi nombre es Francisco Daniel, soy diseñador web. 💻</h1>
-        </div>
+    <div className="grid max-w-screen-xl grid-cols-1 py-10 mx-auto md:grid-cols-2 lg:px-20">
+      <div className="flex items-center justify-center md:justify-start">
+        <Image
+          src={Perfil}
+          width={500}
+          height={500}
+          alt="Picture of the author"
+          className="w-full max-w-xs rounded-full md:w-full md:max-w-none"
+        />
       </div>
-    </section>
+      <div className="mt-2 md:mt-9 ml-9">
+        <h1 className="text-2xl font-bold text-center md:text-5xl md:text-left">
+          Hola, mi nombre es Francisco Daniel, soy diseñador web. 💻
+        </h1>
+      </div>
+    </div>
+  </section>
   );
 };
 

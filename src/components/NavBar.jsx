@@ -5,8 +5,6 @@ import { useState } from 'react'
 
 const NavBar = () => {
   const [state, setState] = useState(false)
-
-  // Replace javascript:void(0) paths with your paths
   const navigation = [
       { title: "Features", path: "javascript:void(0)" },
       { title: "Integrations", path: "javascript:void(0)" },
@@ -17,7 +15,7 @@ const NavBar = () => {
     <nav className="w-full bg-black border-b md:static md:text-sm md:border-none">
             <div className="items-center max-w-screen-xl px-4 mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="javascript:void(0)">
+                    <a >
                         <img
                             src="/img/logo.png"
                             width={200}

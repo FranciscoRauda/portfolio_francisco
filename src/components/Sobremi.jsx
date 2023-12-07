@@ -10,8 +10,8 @@ import{SiFigma} from "react-icons/si";
 
 export const Sobremi = () => {
   return (
-    <section className="px-4 text-center text-white bg-black animate-fade">
-      <div className="max-w-[80rem] mx-auto grid grid-cols-1 px-20 lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10">
+    <section className="text-center text-white bg-black animate-fade">
+      <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10">
         <div>
           <h1 className="text-4xl font-bold text-center bg-white-200 p animate-fade-right">
           Hola,conozcámonos

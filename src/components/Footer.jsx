@@ -4,24 +4,7 @@ const footers = () => {
 
 
 
-    const footerNavs = [
-        {
-            href: 'javascript:void()',
-            name: 'Terms'
-        },
-        {
-            href: 'javascript:void()',
-            name: 'License'
-        },
-        {
-            href: 'javascript:void()',
-            name: 'Privacy'
-        },
-        {
-            href: 'javascript:void()',
-            name: 'About us'
-        }
-    ]
+    
     return (
         <footer className="pt-10 bg-slate-800">
             <div className="max-w-screen-xl px-4 mx-auto text-gray-600 md:px-8">

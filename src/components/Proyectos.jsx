@@ -9,57 +9,48 @@ import tienda from "/public/img/tienda.jpg";
 
 const proyectos = () => {
   return (
-    <section className="bg-black h-[50rem] items-center animate-fade-right animate-once animate-duration-[600ms] animate-delay-[90ms]">
-      <div className="font-bold text-center text-white ">
-        <h1 className="text-center pt-[5rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem] ">
-          Proyectos
-        </h1>
+    <section className="flex-col items-center min-h-screen bg-black animate-fade-right animate-once animate-duration-600 animate-delay-90">
+    <div className="font-bold text-center text-white ">
+      <h1 className="pt-2 mb-4 text-4xl text-center md:text-5xl lg:text-6xl md:pt-16 bg-white-200 md:text-center">
+        Proyectos
+      </h1>
+    </div>
+  
+    <div className="grid items-center max-w-screen-xl grid-cols-1 gap-4 px-4 py-10 mx-auto md:grid-cols-2 lg:grid-cols-4 lg:px-10 md:py-16">
+      <div className="w-full h-full">
+        <Image
+          className="object-cover w-full h-full rounded-lg"
+          src={reloj}
+          alt="Reloj"
+        />
       </div>
-
-      <div className="max-w-[80rem] mx-auto grid grid-cols-4 px-10 lg:grid-cols-4 items-center py-[10rem] gap-4  ">
-
-      <div className="items-center w-full h-full text-center ">
-          <Image
-            className="object-cover h-full rounded-lg"
-            src={reloj}
-           
-            alt="Picture of the author"
-          />
-        </div>
-
-
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={full1}
-           
-            alt="Picture of the author"
-          />
-        </div>
-
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={doc}
-           
-            alt="Picture of the author"
-          />
-        </div>
-        <div className="w-full h-full ">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={tienda}
-           
-            alt="Picture of the author"
-          />
-        </div>
-
-
-
-
-
+  
+      <div className="w-full h-full">
+        <Image
+          className="object-cover w-full h-full rounded-lg"
+          src={full1}
+          alt="Full1"
+        />
       </div>
-    </section>
+  
+      <div className="w-full h-full">
+        <Image
+          className="object-cover w-full h-full rounded-lg"
+          src={doc}
+          alt="Doc"
+        />
+      </div>
+  
+      <div className="w-full h-full">
+        <Image
+          className="object-cover w-full h-full rounded-lg"
+          src={tienda}
+          alt="Tienda"
+        />
+      </div>
+    </div>
+  </section>
+  
   );
 };
 

@@ -6,40 +6,38 @@ import levitacion from "/public/img/levitacion.png";
 
 const Imagenes = () => {
   return (
-    <section className="items-center text-white bg-black animate-fade-left animate-once animate-duration-[600ms] animate-delay-[90ms]">
-      <div>
-        <h2 className="text-center pt-[5rem] pt font-bold tmtext-3xl bg-white-200 ytext-center text-[4rem]">
-        Imágenes
-        </h2>
-      </div>
+    <section className="text-white bg-black animate-fade-left animate-once animate-duration-600 animate-delay-90">
+  <div className="font-bold text-center md:pt-1">
+    <h2 className="mb-4 text-4xl bold ">
+      Imágenes
+    </h2>
+  </div>
 
-      <div className="max-w-[80rem] mx-auto  grid grid-cols-4 px-30 lg:grid-cols-3  py-[10rem] gap-4 items-center text-center animate-fade-left animate-once animate-duration-[600ms] animate-delay-[90ms] ">
-        <div className="items-center w-full h-full text-center ">
-          <Image
-            className="object-cover h-full rounded-lg"
-            src={zapato}
-           
-            alt="Picture of the author"
-          />
-        </div>
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={Mockup}
-           
-            alt="Picture of the author"
-          />
-        </div>
-        <div className="w-full h-full">
-          <Image
-            className="object-cover h-full rounded-lg"    
-            src={levitacion}
-           
-            alt="Picture of the author"
-          />
-        </div>
-      </div>
-    </section>
+  <div className="grid items-center justify-center max-w-screen-xl grid-cols-1 gap-4 py-16 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+    <div className="w-full h-full text-center">
+      <Image
+        className="object-cover w-full h-full rounded-lg"
+        src={zapato}
+        alt="Zapato"
+      />
+    </div>
+    <div className="w-full h-full text-center">
+      <Image
+        className="object-cover w-full h-full rounded-lg"
+        src={Mockup}
+        alt="Mockup"
+      />
+    </div>
+    <div className="w-full h-full text-center">
+      <Image
+        className="object-cover w-full h-full rounded-lg"
+        src={levitacion}
+        alt="Levitacion"
+      />
+    </div>
+  </div>
+</section>
+
   );
 };
 

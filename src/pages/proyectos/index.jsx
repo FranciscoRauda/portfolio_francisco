@@ -22,7 +22,7 @@ const index = () => {
 
           <Link
                 className="block py-2 pl-3 pr-4 text-white bg-red-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent md:text-red-700 md:dark:text-red-500 dark:bg-red-600"
-                href="/proyectos/disenio_publicitario"
+                href="/proyectos/diseniopublicitario"
               >  
           <div className="absolute inset-0 flex translate-y-[55%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 className="text-3xl font-bold text-white font-dmserif">Diseño Publicitario </h1>
