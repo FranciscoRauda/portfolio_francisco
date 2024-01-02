@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io";
@@ -7,16 +7,25 @@ import{FaWordpress} from "react-icons/fa";
 import{SiAdobephotoshop} from "react-icons/si";
 import{SiAdobeillustrator} from "react-icons/si";
 import{SiFigma} from "react-icons/si";
+import Aos from "aos";
+//aos import 
+import AOS from "aos";
+import "aos/dist/aos";
 
 export const Sobremi = () => {
+ 
+  useEffect (()=> {
+    AOS.init({durations : 1200})
+  } );
+  
   return (
-    <section className="text-center text-white bg-black animate-fade">
-      <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10">
-        <div>
-          <h1 className="text-4xl font-bold text-center bg-white-200 p animate-fade-right">
+    <section className="text-center text-white bg-black ">
+      <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10 animate-fade-up animate-twice animate-duration-[3000ms] "   >
+        <div >
+          <h1 className="text-4xl font-bold text-center bg-white-200 p " >
           Hola,conozcámonos
           </h1>
-          <p className="mt-10 text-justify animate-fade-right">
+          <p className="mt-10 text-justify animate-fade-right " >
           Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
             bienvenido, será de mi agrado compartir contigo algunos de los
             proyectos que he realizado a lo largo de mi formación académica y

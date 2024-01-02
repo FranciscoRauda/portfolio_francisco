@@ -6,14 +6,14 @@ import levitacion from "/public/img/levitacion.png";
 
 const Imagenes = () => {
   return (
-    <section className="text-white bg-black animate-fade-left animate-once animate-duration-600 animate-delay-90">
+    <section className="text-white bg-black ">
   <div className="font-bold text-center md:pt-1">
     <h2 className="mb-4 text-4xl bold ">
       Imágenes
     </h2>
   </div>
 
-  <div className="grid items-center justify-center max-w-screen-xl grid-cols-1 gap-4 py-16 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+  <div className="grid items-center justify-center max-w-screen-xl grid-cols-1 gap-4 py-16 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 animate-fade-up animate-twice animate-duration-[3000ms]">
     <div className="w-full h-full text-center">
       <Image
         className="object-cover w-full h-full rounded-lg"
