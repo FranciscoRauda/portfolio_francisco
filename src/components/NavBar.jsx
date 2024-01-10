@@ -13,7 +13,7 @@ const NavBar = () => {
   ]
   return (
     <nav className="w-full bg-black border-b md:static md:text-sm md:border-none">
-            <div className="items-center max-w-screen-xl px-4 mx-auto md:flex md:px-8">
+            <div className="items-center max-w-screen-xl mx-auto px- md:flex md:px-">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <a >
                         <img

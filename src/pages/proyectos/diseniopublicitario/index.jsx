@@ -10,9 +10,11 @@ const index = () => {
   const [open4, setOpen4] = React.useState(false);
   const [open5, setOpen5] = React.useState(false);
   const [open6, setOpen6] = React.useState(false);
+  const [open7, setOpen7] = React.useState(false);
+  const [open8, setOpen8] = React.useState(false);
   
   return (
-    <section className="bg-black h-[70rem] items-center">
+    <section className="bg-black h-[] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           proyectos publicitario
@@ -122,12 +124,46 @@ const index = () => {
                 <Lightbox
                   open={open6}
                   close={() => setOpen6(false)}
-                  slides={[{ src: "/img/AUDIFONOS.jpg" }]}
+                  slides={[{ src:"/img/AUDIFONOS.jpg" }]}
                 />
               </button>
             </div>
-
-            <div></div>
+            
+            <div>
+              <button type="button" onClick={() => setOpen7(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50"
+                  src="/img/COPA.jpg"
+                  width={400}
+                  height={400}
+                  
+                ></Image>
+                <Lightbox
+                  open={open7}
+                  close={() => setOpen7(false)}
+                  slides={[{ src: "/img/COPA.jpg" }]}
+                />
+              </button>
+            </div>
+            
+            <div>
+              <button type="button" onClick={() => setOpen8(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50"
+                  src="/img/ilustracion.jpg"
+                  width={400}
+                  height={400}
+                  
+                ></Image>
+                <Lightbox
+                  open={open8}
+                  close={() => setOpen8(false)}
+                  slides={[{ src: "/img/ilustracion.jpg" }]}
+                />
+              </button>
+            </div>
+            
+           <div></div>
           </div>
         </div>
       </div>
