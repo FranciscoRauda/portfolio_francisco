@@ -175,7 +175,7 @@ const index = () => {
                 ></Image>
                 <Lightbox
                   open={open9}
-                  close={() => setOpen8(false)}
+                  close={() => setOpen9(false)}
                   slides={[{ src: "/img/tarjetas.png" }]}
                 />
               </button>
