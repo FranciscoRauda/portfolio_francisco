@@ -193,7 +193,7 @@ const index = () => {
                 <Lightbox
                   open={open10}
                   close={() => setOpen10(false)}
-                  slides={[{ src: "/img/Poster.png" }]}
+                  slides={[{ src: "/img/poster.png" }]}
                 />
               </button>
             </div>
