@@ -9,6 +9,7 @@ const index = () => {
   const [open3, setOpen3] = React.useState(false);
   const [open4, setOpen4] = React.useState(false);
   const [open5, setOpen5] = React.useState(false);
+  const [open6, setOpen6] = React.useState(false);
   return (
     <section className="bg-black h-[70rem] items-center">
       <div className="font-bold text-center text-white ">
@@ -123,6 +124,27 @@ const index = () => {
                   ]}
                 />
               </button>
+            </div>
+
+            <div>
+              <button type="button" onClick={() => setOpen6(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/cover-web.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open6}
+                close={() => setOpen6(false)}
+                slides={[
+                  { src: "/img/Sitio-web.png" },
+                 
+                ]}
+              />
+              
             </div>
 
             
