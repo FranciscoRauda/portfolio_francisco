@@ -19,7 +19,7 @@ const index = () => {
     <section className="bg-black h-[] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
-          proyectos publicitario
+          Proyectos Publicitario
         </h1>
       </div>
 
