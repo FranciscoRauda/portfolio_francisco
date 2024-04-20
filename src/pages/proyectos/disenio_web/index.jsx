@@ -10,8 +10,10 @@ const index = () => {
   const [open4, setOpen4] = React.useState(false);
   const [open5, setOpen5] = React.useState(false);
   const [open6, setOpen6] = React.useState(false);
+  const [open7, setOpen7] = React.useState(false);
+  const [open8, setOpen8] = React.useState(false);
   return (
-    <section className="bg-black h-[70rem] items-center">
+    <section className="bg-black h-[80rem] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web
@@ -144,6 +146,69 @@ const index = () => {
                  
                 ]}
               />
+              
+            </div>
+
+
+            <div>
+              <button type="button" onClick={() => setOpen7(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/cover-landin.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open7}
+                close={() => setOpen7(false)}
+                slides={[
+                  { src: "/img/principal-landing.png" },
+                  { src: "/img/seccion-landing.png" },
+                 
+                ]}
+              />
+              <p className="text-center text-white">
+                <a
+                  href="https://serali.com.mx/landing-promo-facebook-ads/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio
+                </a>
+              </p>
+              
+            </div>
+
+            <div>
+              <button type="button" onClick={() => setOpen8(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/cover-serali.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open8}
+                close={() => setOpen8(false)}
+                slides={[
+                  { src: "/img/serali1.png" },
+                  { src: "/img/serali2.png" },
+                 
+                ]}
+              />
+              <p className="text-center text-white">
+                <a
+                  href="https://serali.com.mx/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio
+                </a>
+              </p>
               
             </div>
 
