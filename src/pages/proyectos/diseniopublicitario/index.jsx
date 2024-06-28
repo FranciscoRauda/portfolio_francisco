@@ -202,7 +202,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen11(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50"
-                  src="/img/pollo-cover.png"
+                  src="/img/Pollo-cover1.png"
                   width={400}
                   height={400}
                   
