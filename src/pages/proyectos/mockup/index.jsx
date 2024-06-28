@@ -8,6 +8,8 @@ const index = () => {
   const [open2, setOpen2] = React.useState(false);
   const [open3, setOpen3] = React.useState(false);
   const [open4, setOpen4] = React.useState(false);
+  const [open5, setOpen5] = React.useState(false);
+
 
   return (
     <section className="bg-black h-[70rem] items-center">
@@ -84,6 +86,24 @@ const index = () => {
                 open={open4}
                 close={() => setOpen4(false)}
                 slides={[{ src: "/img/camisas-m.jpg" }]}
+              />
+            </div>
+
+
+            <div>
+              <button type="button" onClick={() => setOpen5(true)}>
+                <Image
+                  class="h-50 w-49 max-w-full rounded-lg"
+                  src="/img/cover-lata.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open5}
+                close={() => setOpen5(false)}
+                slides={[{ src: "/img/lata-min.png" }]}
               />
             </div>
 
