@@ -226,7 +226,7 @@ const index = () => {
                 <Lightbox
                   open={open12}
                   close={() => setOpen12(false)}
-                  slides={[{ src: "/img/Nier-automata.png" }]}
+                  slides={[{ src: "/img/Nier-automata2.png" }]}
                 />
               </button>
             </div>
