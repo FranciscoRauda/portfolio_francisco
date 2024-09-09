@@ -62,7 +62,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/foto-gratis/producto-regeneracion-cutanea-vida-muerta_23-2151232259.jpg?t=st=1725908654~exp=1725912254~hmac=cc9814794b5a57734c41504a277ca82a5a3227f2536815d507b99a50098f6524&w=740"
+              src="https://i.pinimg.com/564x/b5/a4/0e/b5a40ef7a2e31eccb0474d0f76227d89.jpg"
               alt=""
             />
           </div>
@@ -87,7 +87,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/foto-gratis/camara-fotos-explotacion-mano_23-2150630970.jpg?t=st=1725909018~exp=1725912618~hmac=458f0e3a1932e9fc8119b1a581dc5dbfd8877d63f0e6e5a2ffe76db414298e7b&w=740"
+              src="https://i.pinimg.com/564x/a4/79/13/a47913486c16552f9a7c9ce5e2dc1e8b.jpg"
               alt=""
             />
           </div>
@@ -116,7 +116,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/foto-gratis/freelance-masculino-que-trabaja-produccion-peliculas-software-computadora-editando-montajes-peliculas-efectos-visuales-audio-creacion-contenido-multimedia-material-archivo-aplicacion-creativa-clasificacion-color_482257-50390.jpg?t=st=1725900878~exp=1725904478~hmac=bf570e83b4f580f59a1416f47cdd071dcbb11b610d63eb6441f3f4799daf6330&w=1380"
+              src="https://i.pinimg.com/564x/d6/78/03/d67803de725da1c479c722c8e5d41538.jpg"
               alt=""
             />
           </div>
