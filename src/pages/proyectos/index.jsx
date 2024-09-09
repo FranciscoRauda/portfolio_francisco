@@ -14,7 +14,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/free-vector/abstract-business-flyer-with-image_23-2148336256.jpg?w=826&t=st=1689200927~exp=1689201527~hmac=28337050f5a6b526a2c78f303be52e3ee7cd1431b0b1ee7e3f03c2429c0279f2"
+              src="https://img.freepik.com/foto-gratis/fotografo-artista-afroamericano-auriculares-que-retocan-imagenes-disenadores-utilizando-software-posproduccion-digital-joven-editor-ilustrador-editando-fotografia-creativa-trabajando-lejos-casa_482257-28563.jpg?t=st=1725908157~exp=1725911757~hmac=e0e8d0ac6200d51dae9c93826e6ad1083ad734bc89338bdd41dced8af734c64f&w=740 "
               alt=""
             />
           </div>
@@ -62,7 +62,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/free-photo/black-shirt-with-word-ultra-it_1340-37775.jpg?t=st=1689197388~exp=1689200988~hmac=6cd7f83e26ab36349dc20b895501638fa2a3e53451c7a98d2b00de40d24e851a&w=826"
+              src="https://img.freepik.com/foto-gratis/producto-regeneracion-cutanea-vida-muerta_23-2151232259.jpg?t=st=1725908654~exp=1725912254~hmac=cc9814794b5a57734c41504a277ca82a5a3227f2536815d507b99a50098f6524&w=740"
               alt=""
             />
           </div>
@@ -87,7 +87,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/free-photo/young-content-creator-girl-is-her-laptop-sitting-sofa-working-with-photos-from-home_1268-17400.jpg?w=1380&t=st=1689198642~exp=1689199242~hmac=436b76fd05c5550978f85dcadbb9933058f16426c3ff4fefecf258621d0f332f"
+              src="https://img.freepik.com/foto-gratis/camara-fotos-explotacion-mano_23-2150630970.jpg?t=st=1725909018~exp=1725912618~hmac=458f0e3a1932e9fc8119b1a581dc5dbfd8877d63f0e6e5a2ffe76db414298e7b&w=740"
               alt=""
             />
           </div>
@@ -109,6 +109,42 @@ const index = () => {
          </Link>
           
         </div>
+
+
+
+        <div className="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
+          <div className="h-96 w-72">
+            <img
+              className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+              src="https://img.freepik.com/foto-gratis/freelance-masculino-que-trabaja-produccion-peliculas-software-computadora-editando-montajes-peliculas-efectos-visuales-audio-creacion-contenido-multimedia-material-archivo-aplicacion-creativa-clasificacion-color_482257-50390.jpg?t=st=1725900878~exp=1725904478~hmac=bf570e83b4f580f59a1416f47cdd071dcbb11b610d63eb6441f3f4799daf6330&w=1380"
+              alt=""
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
+          <Link
+                className="block py-2 pl-3 pr-4 text-white bg-red-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent md:text-red-700 md:dark:text-red-500 dark:bg-red-600"
+                href="/proyectos/video"
+              >
+          <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <h1 className="text-3xl font-bold text-white font-dmserif">
+            Videos
+            </h1>
+            <p className="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+              Aquì encontràs proyectos de ediciòn de videos.
+            </p>
+            
+          </div>
+         </Link>
+          
+        </div>
+
+
+
+
+
+
+
       </div>
     </div>
   );
