@@ -14,7 +14,7 @@ const index = () => {
           <div className="h-96 w-72">
             <img
               className="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-              src="https://img.freepik.com/foto-gratis/fotografo-artista-afroamericano-auriculares-que-retocan-imagenes-disenadores-utilizando-software-posproduccion-digital-joven-editor-ilustrador-editando-fotografia-creativa-trabajando-lejos-casa_482257-28563.jpg?t=st=1725908157~exp=1725911757~hmac=e0e8d0ac6200d51dae9c93826e6ad1083ad734bc89338bdd41dced8af734c64f&w=740 "
+              src="https://i.pinimg.com/564x/12/af/f0/12aff04fcc677e0ea8b412fc1b32b37d.jpg "
               alt=""
             />
           </div>
