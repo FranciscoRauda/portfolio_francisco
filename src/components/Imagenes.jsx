@@ -5,7 +5,7 @@ import Mockup from "/public/img/Mockup.png";
 import levitacion from "/public/img/levitacion.png";
 import canada from "/public/img/canada.png";
 import hamburgesa from "/public/img/hamburgesa.jpg";
-import targetas from "/public/img/targetas.jpg";
+import targetas from "/public/img/Targetas.jpg";
 
 const Imagenes = () => {
   return (
