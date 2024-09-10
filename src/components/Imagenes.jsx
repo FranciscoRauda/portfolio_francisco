@@ -3,6 +3,9 @@ import Image from "next/image";
 import zapato from "/public/img/zapato.png";
 import Mockup from "/public/img/Mockup.png";
 import levitacion from "/public/img/levitacion.png";
+import canada from "/public/img/canada.png";
+import hamburgesa from "/public/img/hamburgesa.jpg";
+import targetas from "/public/img/targetas.jpg";
 
 const Imagenes = () => {
   return (
@@ -36,6 +39,33 @@ const Imagenes = () => {
       />
     </div>
   </div>
+
+
+  <div className="grid items-center justify-center max-w-screen-xl grid-cols-1 gap-4 py-7 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 animate-fade-up animate-twice animate-duration-[3000ms]">
+    <div className="w-full h-full text-center">
+      <Image
+        className="object-cover w-full h-full rounded-lg"
+        src={canada}
+        alt="canada"
+      />
+    </div>
+    <div className="w-full h-full text-center">
+      <Image
+        className="object-cover w-full h-full rounded-lg"
+        src={hamburgesa}
+        alt="hamburgesa"
+      />
+    </div>
+    <div className="w-full h-full text-center">
+      <Image
+        className="object-cover w-full h-full rounded-lg"
+        src={targetas}
+        alt="targetas"
+      />
+    </div>
+  </div>
+
+  
 </section>
 
   );

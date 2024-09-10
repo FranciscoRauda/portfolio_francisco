@@ -5,58 +5,56 @@ import "yet-another-react-lightbox/styles.css";
 
 const index = () => {
   return (
-    <section className="bg-black h-[70rem] items-center">
-      <div className="font-bold text-center text-white ">
-        <h1 className="text-center pt-[5rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem] ">
-          videos
+    <section className="flex flex-col items-center min-h-screen bg-black">
+      <div className="font-bold text-center text-white">
+        <h1 className="pt-20 text-4xl font-bold text-center md:text-5xl">
+          Videos
         </h1>
       </div>
-      <div className="grid grid-cols-1 gap-5 mt-10 md:grid-cols-1 lg:grid-cols-1">
-        <div class="flex items-center justify-center tex-center ">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-2 ">
-            <div>
-              <div
-                style={{
-                  position: "relative",
-                  paddingBottom: "56.25%",
-                  height: 0,
-                }}
-              >
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/z1kyd9Y58Dk?si=s_BhOUuykslAiCyF"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
 
-            <div>
-              <div
-                style={{
-                  position: "relative",
-                  paddingBottom: "56.25%",
-                  height: 0,
-                }}
-              >
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/Ng1RF-jG6Qw?si=BrWywAoviGpn62Pq"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
+      {/* Grilla de videos responsive */}
+      <div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        {/* Video 1 */}
+        <div className="flex items-center justify-center">
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: "56.25%",
+              height: 0,
+            }}
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/z1kyd9Y58Dk?si=lkMRsiP1C7o1vGB9"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
 
-            <div></div>
+        {/* Video 2 */}
+        <div className="flex items-center justify-center">
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: "56.25%",
+              height: 0,
+            }}
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ng1RF-jG6Qw?si=svCKOkQ0fOvv3V37"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
