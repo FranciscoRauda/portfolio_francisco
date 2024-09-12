@@ -6,13 +6,13 @@ const NavBar = () => {
   return (
     <nav className="w-full bg-black border-b md:static md:text-sm md:border-none">
       <div className="flex items-center justify-between max-w-screen-xl px-4 py-3 mx-auto md:px-6 md:py-4">
-        <a href="/">
+        <a href="/" className="flex items-center">
           <img
             src="/img/logo.png"
             width={200}
             height={300}
             alt="Logo"
-            className="h-10 md:h-16" // Ajusta el tamaño del logo en móviles y pantallas grandes
+            className="h-10 md:h-16 lg:h-20" // Ajuste del logo en diferentes pantallas
           />
         </a>
         <button
@@ -53,14 +53,14 @@ const NavBar = () => {
         </button>
         <div
           className={`fixed inset-0 bg-black bg-opacity-75 z-50 md:static md:bg-transparent md:flex md:items-center md:space-x-4 transition-transform transform ${
-            isOpen ? "translate-x-0" : "translate-x-full" // Menú móvil se desplaza desde la derecha
-          }`}
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } md:translate-x-0`} // En pantallas más grandes el menú siempre estará visible
         >
-          <ul className="flex flex-col p-4 md:flex-row md:space-x-4 md:p-0">
+          <ul className="flex flex-col p-2 md:flex-row md:space-x-6 md:p-0">
             <li>
               <a
                 href="/"
-                className="block py-3 font-bold text-center text-white rounded-md hover:bg-gray-700"
+                className="block py-3 font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Inicio
               </a>
@@ -68,7 +68,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/proyectos"
-                className="block py-3 font-bold text-center text-red-500 rounded-md hover:bg-gray-700"
+                className="block py-3 font-bold text-center text-red-500 rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-red-300"
               >
                 Proyectos
               </a>
@@ -76,7 +76,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/contacto"
-                className="block py-3 font-bold text-center text-blue-500 rounded-md hover:bg-gray-700"
+                className="block py-3 font-bold text-center text-blue-500 rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-300"
               >
                 Contáctame
               </a>
