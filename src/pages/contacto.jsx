@@ -70,7 +70,7 @@ const contacto = () => {
             
           </a>
         </div>
-        <span className="ml-2 font-bold">+50377950054</span>
+        <span className="ml-2 font-bold">+50377960054</span>
       </div>
 
       {/* Location */}
