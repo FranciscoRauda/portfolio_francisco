@@ -12,7 +12,7 @@ const NavBar = () => {
             width={200}
             height={300}
             alt="Logo"
-            className="h-10 md:h-16 lg:h-20" // Ajuste del logo en diferentes pantallas
+            className="h-22 md:h-20 lg:h-16" // Ajuste del logo en diferentes pantallas
           />
         </a>
         <button

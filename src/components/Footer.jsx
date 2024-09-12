@@ -32,7 +32,7 @@ const footers = () => {
                     </div>
                 </div>
                 <div className="py-10 mt-10 text-white border-t md:text-center">
-                    <p>© 2023 Daniel Mejia</p>
+                    <p>© 2024 Daniel Mejia</p>
                 </div>
             </div>
         </footer>
