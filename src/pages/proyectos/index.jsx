@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const index = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen animate-fade-left animate-twice animate-duration-[600ms] animate-delay-100">
+    <div className="flex items-center justify-center min-h-screen animate-fade-up animate-ease-linear">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         <div className="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
           <div className="h-96 w-72">
