@@ -12,6 +12,7 @@ const index = () => {
   const [open6, setOpen6] = React.useState(false);
   const [open7, setOpen7] = React.useState(false);
   const [open8, setOpen8] = React.useState(false);
+  const [open9, setOpen9] = React.useState(false);
   return (
     <section className="bg-black h-[80rem] items-center">
       <div className="font-bold text-center text-white ">
@@ -212,6 +213,37 @@ const index = () => {
               
             </div>
 
+
+            <div>
+              <button type="button" onClick={() => setOpen9(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/cover-travel.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open9}
+                close={() => setOpen9(false)}
+                slides={[
+                  { src: "/img/sitiotravel.png" },
+                  { src: "/img/sitiotravel.png" },
+                 
+                ]}
+              />
+              <p className="text-center text-white">
+                <a
+                  href="http://franweb.infinityfreeapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio
+                </a>
+              </p>
+              
+            </div>
             
 
             <div></div>
