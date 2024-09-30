@@ -22,12 +22,12 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-    <html lag= "en " >
+    <html lag= "en ">
       <head>
         <script>
          src="https://www.googletagmanager.com/gtag/js?id=G-XM9DC9ENN7"
         </script>
-        <script id="gooogle analitics">
+        <script id="google analitics">
         { `
 window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
