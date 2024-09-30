@@ -23,7 +23,7 @@ export const Sobremi = () => {
       <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10 animate-fade-up animate-twice animate-duration-[3000ms] "   >
         <div >
           <h1 className="text-4xl font-bold text-center bg-white-200 p " >
-          Hola, Conozcamonos
+          Conozcámonos
           </h1>
           <p className="mt-10 text-justify animate-fade-right " >
           Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
