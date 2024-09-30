@@ -1,15 +1,15 @@
 import "@/styles/globals.css";
 import Layout from "@/components/layout";
-import { useEffect } from 'react'; // Importa useEffect
-import { useRouter } from 'next/router'; // Importa useRouter
-import Script from 'next/script'; // Importa el componente Script
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Script from 'next/script';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      window.gtag('config', 'GTM-TTMF4MPH', {
+      window.gtag('config', 'G-XM9DC9ENN7', {  // Aquí usa tu Measurement ID de Google Analytics
         page_path: url,
       });
     };
@@ -22,10 +22,10 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* Google Analytics Scripts */}
+      {/* Google Analytics Script */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=GTM-TTMF4MPH`} // Reemplaza con tu Measurement ID
+        src={`https://www.googletagmanager.com/gtag/js?id=G-XM9DC9ENN7`} // Usa tu Measurement ID
       />
       <Script
         id="google-analytics"
@@ -35,14 +35,13 @@ export default function App({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'GTM-TTMF4MPH', {
+            gtag('config', 'G-XM9DC9ENN7', {  // Measurement ID de Google Analytics
               page_path: window.location.pathname,
             });
           `,
         }}
       />
 
-      {/* Layout y Componentes */}
       <Layout>
         <Component {...pageProps} />
       </Layout>
