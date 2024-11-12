@@ -17,6 +17,7 @@ const index = () => {
   const [open11, setOpen11] = React.useState(false);
   const [open12, setOpen12] = React.useState(false);
   const [open13, setOpen13] = React.useState(false);
+  const [open14, setOpen14] = React.useState(false);
   return (
     <section className="bg-black h-[] items-center">
       <div className="font-bold text-center text-white ">
@@ -236,7 +237,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen13(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50"
-                  src="/img/herramientas.png"
+                  src="/img/herramientas-cover.png"
                   width={400}
                   height={400}
                   
@@ -248,6 +249,25 @@ const index = () => {
                 />
               </button>
             </div>
+
+            <div>
+              <button type="button" onClick={() => setOpen14(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50"
+                  src="/img/electronic-cover.PNG"
+                  width={400}
+                  height={400}
+                  
+                ></Image>
+                <Lightbox
+                  open={open14}
+                  close={() => setOpen14(false)}
+                  slides={[{ src: "/img/electronic.png" }]}
+                />
+              </button>
+            </div>
+
+            
 
             
             
