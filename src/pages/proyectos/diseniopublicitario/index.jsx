@@ -254,7 +254,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen14(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50"
-                  src="/img/electronic-cover.PNG"
+                  src="/img/electronic-1.png"
                   width={400}
                   height={400}
                   
