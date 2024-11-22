@@ -251,7 +251,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen10(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50 w-49"
-                  src="/img/panel-min.png"
+                  src="/img/panel.png"
                   width={400}
                   height={400}
                   alt=""
@@ -261,7 +261,7 @@ const index = () => {
                 open={open10}
                 close={() => setOpen10(false)}
                 slides={[
-                  { src: "/img/panel-min.png" },
+                  { src: "/img/panel.png" },
                  ]}
               />
              </div>
