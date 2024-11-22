@@ -262,13 +262,9 @@ const index = () => {
                 close={() => setOpen10(false)}
                 slides={[
                   { src: "/img/panel-min.png" },
-                 
-                 
-                ]}
+                 ]}
               />
-              
-              
-            </div>
+             </div>
             
 
             <div></div>
