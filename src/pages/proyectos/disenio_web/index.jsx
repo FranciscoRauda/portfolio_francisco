@@ -13,8 +13,9 @@ const index = () => {
   const [open7, setOpen7] = React.useState(false);
   const [open8, setOpen8] = React.useState(false);
   const [open9, setOpen9] = React.useState(false);
+  const [open10, setOpen10] = React.useState(false);
   return (
-    <section className="bg-black h-[80rem] items-center">
+    <section className="bg-black h-[] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web
@@ -242,6 +243,30 @@ const index = () => {
                   Ir al sitio
                 </a>
               </p>
+              
+            </div>
+
+
+            <div>
+              <button type="button" onClick={() => setOpen10(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/panel-min.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open10}
+                close={() => setOpen10(false)}
+                slides={[
+                  { src: "/img/panel-min.png" },
+                 
+                 
+                ]}
+              />
+              
               
             </div>
             
