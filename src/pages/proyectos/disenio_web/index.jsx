@@ -14,8 +14,9 @@ const index = () => {
   const [open8, setOpen8] = React.useState(false);
   const [open9, setOpen9] = React.useState(false);
   const [open10, setOpen10] = React.useState(false);
+  const [open11, setOpen11] = React.useState(false);
   return (
-    <section className="bg-black h-[] items-center">
+    <section className="bg-black h-[100rem] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web
@@ -265,6 +266,40 @@ const index = () => {
                  ]}
               />
              </div>
+            
+
+             <div>
+              <button type="button" onClick={() => setOpen11(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/sitioapp-cover.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open11}
+                close={() => setOpen11(false)}
+                slides={[
+                  { src: "/img/sitio-app.png" },
+                  {  },
+                 
+                ]}
+              />
+              <p className="text-center text-white">
+                <a
+                  href="https://serali.com.mx/emprende-con-tu-propia-app-tipo-uber/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio
+                </a>
+              </p>
+              
+            </div>
+
+
             
 
             <div></div>
