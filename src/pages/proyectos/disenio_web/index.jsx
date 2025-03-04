@@ -15,6 +15,7 @@ const index = () => {
   const [open9, setOpen9] = React.useState(false);
   const [open10, setOpen10] = React.useState(false);
   const [open11, setOpen11] = React.useState(false);
+  const [open12, setOpen12] = React.useState(false);
   return (
     <section className="bg-black h-[100rem] items-center">
       <div className="font-bold text-center text-white ">
@@ -296,6 +297,29 @@ const index = () => {
                   Ir al sitio
                 </a>
               </p>
+              
+            </div>
+
+
+
+            <div>
+              <button type="button" onClick={() => setOpen12(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50 w-49"
+                  src="/img/web-deportes.png"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></Image>
+              </button>
+              <Lightbox
+                open={open12}
+                close={() => setOpen12(false)}
+                slides={[
+                  { src: "/img/web-deportes.png" },
+                   ]}
+              />
+              
               
             </div>
 
