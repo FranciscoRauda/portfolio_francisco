@@ -5,7 +5,7 @@ import Perfil from "/public/img/foto-profesional.jpg";
 const Header = () => {
   return (
     <section className="text-white bg-black ">
-    <div className="grid max-w-screen-xl grid-cols-1 py-10 mx-auto md:grid-cols-2 lg:px-20 animate-fade-up animate-twice animate-duration-[3000ms]">
+    <div className="grid max-w-screen-xl grid-cols-1 py-10 mx-auto md:grid-cols-2 lg:px-20 animate-fade-left animate-once animate-duration-[1000ms] animate-delay-[8ms] animate-ease-in-out animate-normal animate-fill-forwards">
       <div className="flex items-center justify-center md:justify-start ">
         <Image
           src={Perfil}
