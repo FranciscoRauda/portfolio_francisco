@@ -9,7 +9,7 @@ import tienda from "/public/img/tienda.jpg";
 
 const proyectos = () => {
   return (
-    <section className="flex-col items-center min-h-screen bg-black ">
+    <section className="flex-col items-center min-h-screen bg-gradient-to-r from-indigo-800 to-gray-800 ">
     <div className="font-bold text-center text-white ">
       <h1 className="pt-2 mb-4 text-4xl text-center md:text-5xl lg:text-6xl md:pt-16 bg-white-200 md:text-center">
         Proyectos

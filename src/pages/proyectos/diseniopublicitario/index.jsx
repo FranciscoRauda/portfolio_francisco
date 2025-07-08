@@ -19,7 +19,7 @@ const index = () => {
   const [open13, setOpen13] = React.useState(false);
   const [open14, setOpen14] = React.useState(false);
   return (
-    <section className="bg-black h-[] items-center">
+    <section className="bg-gradient-to-r from-indigo-800 to-gray-800 h-[] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Publicitario

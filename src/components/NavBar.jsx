@@ -4,7 +4,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-black border-b md:static md:text-sm md:border-none">
+    <nav className="w-full border-b md:static md:text-sm md:border-none bg-gradient-to-r from-indigo-800 to-gray-800">
       <div className="flex items-center justify-between max-w-screen-xl px-4 py-3 mx-auto md:px-6 md:py-4">
         <a href="/" className="flex items-center">
           <img
@@ -60,7 +60,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/"
-                className="block py-3 font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
+                className="block py-3 font-bold text-center text-white text-lg rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Inicio
               </a>
@@ -68,7 +68,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/proyectos"
-                className="block py-3 font-bold text-center text-red-500 rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-red-300"
+                className="block py-3 font-bold text-center text-white text-lg rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Proyectos
               </a>
@@ -76,7 +76,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/contacto"
-                className="block py-3 font-bold text-center text-blue-500 rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-300"
+                className="block py-3 font-bold text-center text-white text-lg rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Contáctame
               </a>

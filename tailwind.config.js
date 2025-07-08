@@ -16,19 +16,18 @@ module.exports = {
       },
       keyframes: {
         typewriter: {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' },
+          from: { width: '0' },
+          to: { width: '100%' },
         },
         blink: {
-          '0%, 100%': { borderColor: 'transparent' },
-          '50%': { borderColor: 'white' },
+          'from, to': { 'border-color': 'transparent' },
+          '50%': { 'border-color': 'white' },
         },
       },
       animation: {
-        'typewriter-part1': 'typewriter 1.8s steps(18) forwards, blink 0.7s step-end infinite',
-        'typewriter-part2': 'typewriter 1.7s steps(17) forwards, blink 0.7s step-end infinite',
-        'typewriter-part3': 'typewriter 2s steps(20) forwards, blink 0.7s step-end infinite',
-        'typewriter-line1-mobile': 'typewriter 3.1s steps(31) forwards, blink 0.7s step-end infinite',
+        'typewriter-name': 'typewriter 1.8s steps(18) forwards',
+        'typewriter-role': 'typewriter 2s steps(21) 1.9s forwards',
+        'caret-blink': 'blink 0.75s step-end infinite',
       },
     },
   },

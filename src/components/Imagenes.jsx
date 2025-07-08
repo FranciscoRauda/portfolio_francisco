@@ -9,7 +9,7 @@ import targetas from "/public/img/Targetas.jpg";
 
 const Imagenes = () => {
   return (
-    <section className="text-white bg-black ">
+    <section className="text-white bg-gradient-to-r from-indigo-800 to-gray-800">
   <div className="font-bold text-center md:pt-1">
     <h2 className="mb-4 text-4xl bold ">
       Imágenes

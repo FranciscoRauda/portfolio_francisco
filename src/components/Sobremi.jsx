@@ -19,7 +19,7 @@ export const Sobremi = () => {
   } );
   
   return (
-    <section className="text-center text-white bg-black ">
+    <section className="text-center text-white bg-gradient-to-r from-indigo-800 to-gray-800">
       <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10 animate-fade-up animate-twice animate-duration-[3000ms] "   >
         <div >
           <h1 className="text-4xl font-bold text-center bg-white-200 p " >

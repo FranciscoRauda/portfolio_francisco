@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 
 const index = () => {
   return (
-    <section className="flex flex-col items-center min-h-screen bg-black">
+    <section className="flex flex-col items-center min-h-screen bg-gradient-to-r from-indigo-800 to-gray-800">
       <div className="font-bold text-center text-white">
         <h1 className="pt-20 text-4xl font-bold text-center md:text-5xl">
           Videos
