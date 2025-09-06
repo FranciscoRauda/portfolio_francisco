@@ -17,7 +17,7 @@ const index = () => {
   const [open11, setOpen11] = React.useState(false);
   const [open12, setOpen12] = React.useState(false);
   return (
-    <section className="bg-gradient-to-r from-indigo-800 to-gray-800 h-[100rem] items-center">
+    <section className="bg-gradient-to-r from-indigo-800 to-gray-800 h-full items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web
@@ -30,7 +30,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen1(true)}>
                 <Image
-                  className="max-w-full h-50 "
+                  className="object-cover rounded-lg"
                   src="/img/zapateria-cover.png"
                   width={400}
                   height={400}
@@ -47,8 +47,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen2(true)}>
                 <Image
-                  className="object-cover h-full rounded-lg"
-                  class="max-w-full h-50 object"
+                  className="object-cover rounded-lg"
                   width={400}
                   height={400}
                   src="/img/Deportivo-cover.png"
@@ -64,7 +63,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen3(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50"
+                  className="object-cover rounded-lg"
                   src="/img/doc-cover.png"
                   width={400}
                   height={400}
@@ -84,7 +83,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen4(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/comproyse-cover.png"
                   width={400}
                   height={400}
@@ -99,26 +98,19 @@ const index = () => {
                   { src: "/img/comproyse2.jpg" },
                 ]}
               />
-              <p className="text-center text-white">
-                <a
-                  href="https://comproyse.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ir al sitio
-                </a>
-              </p>
+              
             </div>
 
             <div>
               <button type="button" onClick={() => setOpen5(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50"
+                  className="object-cover rounded-lg"
                   src="/img/sivar-cover.png"
                   width={400}
                   height={400}
                   alt=""
                 ></Image>
+              </button>
                 <Lightbox
                   open={open5}
                   close={() => setOpen5(false)}
@@ -129,14 +121,13 @@ const index = () => {
                     { src: "/img/ventas.png"},
                   ]}
                 />
-              </button>
             </div>
 
             <div>
               <button type="button" onClick={() => setOpen6(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
-                  src="/img/cover-web.png"
+                  className="object-cover rounded-lg"
+                  src="/img/ferreteria-cover.png"
                   width={400}
                   height={400}
                   alt=""
@@ -146,10 +137,19 @@ const index = () => {
                 open={open6}
                 close={() => setOpen6(false)}
                 slides={[
-                  { src: "/img/Sitio-web.png" },
+                  { src: "/img/ferreteria.png" },
                  
                 ]}
               />
+              <p className="text-center text-white">
+                <a
+                  href="https://ferreteriafenix.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio
+                </a>
+              </p>
               
             </div>
 
@@ -157,7 +157,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen7(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/cover-landin.png"
                   width={400}
                   height={400}
@@ -188,7 +188,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen8(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/cover-serali.png"
                   width={400}
                   height={400}
@@ -220,7 +220,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen9(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/cover-travel.png"
                   width={400}
                   height={400}
@@ -252,7 +252,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen10(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/panel.png"
                   width={400}
                   height={400}
@@ -272,7 +272,7 @@ const index = () => {
              <div>
               <button type="button" onClick={() => setOpen11(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/sitioapp-cover.png"
                   width={400}
                   height={400}
@@ -284,7 +284,6 @@ const index = () => {
                 close={() => setOpen11(false)}
                 slides={[
                   { src: "/img/sitio-app.png" },
-                  {  },
                  
                 ]}
               />
@@ -305,7 +304,7 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen12(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
+                  className="object-cover rounded-lg"
                   src="/img/web-deportes.png"
                   width={400}
                   height={400}
