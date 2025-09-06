@@ -17,7 +17,7 @@ const index = () => {
   const [open11, setOpen11] = React.useState(false);
   const [open12, setOpen12] = React.useState(false);
   return (
-    <section className="bg-gradient-to-r from-indigo-800 to-gray-800 h-full items-center">
+    <section className="items-center h-full bg-gradient-to-r from-indigo-800 to-gray-800">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web
@@ -236,15 +236,7 @@ const index = () => {
                  
                 ]}
               />
-              <p className="text-center text-white">
-                <a
-                  href="http://franweb.infinityfreeapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ir al sitio
-                </a>
-              </p>
+              
               
             </div>
 
