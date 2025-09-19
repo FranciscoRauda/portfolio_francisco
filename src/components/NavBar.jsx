@@ -60,7 +60,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/"
-                className="block py-3 font-bold text-center text-white text-lg rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
+                className="block py-3 text-lg font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Inicio
               </a>
@@ -68,7 +68,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/proyectos"
-                className="block py-3 font-bold text-center text-white text-lg rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
+                className="block py-3 text-lg font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Proyectos
               </a>
@@ -76,9 +76,19 @@ const NavBar = () => {
             <li>
               <a
                 href="/contacto"
-                className="block py-3 font-bold text-center text-white text-lg rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
+                className="block py-3 text-lg font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
                 Contáctame
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://franciscorauda.github.io/cv-francisco/" // Reemplaza con la ruta correcta a tu CV
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-3 text-lg font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
+              >
+                Cv
               </a>
             </li>
           </ul>
