@@ -25,7 +25,7 @@ export const Sobremi = () => {
           <h1 className="text-4xl font-bold text-center bg-white-200 p " >
           Conozcámonos
           </h1>
-          <p className="mt-10 text-justify animate-fade-right " >
+          <p className="mt-10 text-justify animate-fade-right px-4 lg:px-0" >
           Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
             bienvenido, será de mi agrado compartir contigo algunos de los
             proyectos que he realizado a lo largo de mi formación académica y
