@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
-import Seccion1 from  "@/components/Seccion1";
+
 import Sobremi from "@/components/Sobremi";
 import Proyectos from "@/components/Proyectos";
 import Imagenes from "@/components/Imagenes";
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main>
        <Header/>
-       <Seccion1/>
+       {/* <Seccion1/> */}
        <Sobremi/>
        <Proyectos/>
         <Imagenes/>

@@ -24,10 +24,10 @@ const Header = () => {
         <div className="flex items-center justify-center mt-8 md:justify-start md:mt-0"> 
   <h1 class="text-center md:text-left">
     <span class="block text-2xl font-normal text-white md:text-4xl">Hola, mi nombre es</span>
-    <span class="block text-4xl font-bold text-white md:text-6xl relative overflow-hidden whitespace-nowrap border-r-2 border-white w-[18ch] animate-typewriter-name animate-caret-blink">
+    <span class="block text-4xl font-bold text-white md:text-6xl relative overflow-hidden whitespace-nowrap border-r-2 border-white w-[18ch] animate-typewriter-name">
       Francisco Daniel,
     </span>
-    <span class="block text-4xl font-bold text-white md:text-6xl relative overflow-hidden whitespace-nowrap border-r-2 border-white w-[21ch] animate-typewriter-role animate-caret-blink">
+    <span class="block text-4xl font-bold text-white md:text-6xl relative overflow-hidden whitespace-nowrap border-r-2 border-white w-[21ch] animate-typewriter-role">
       Soy diseñador web.💻
     </span>
   </h1>
