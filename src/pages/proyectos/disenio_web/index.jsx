@@ -98,6 +98,15 @@ const index = () => {
                   { src: "/img/comproyse2.jpg" },
                 ]}
               />
+              <p className="text-center text-white">
+                <a
+                  href="http://comproyse.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio
+                </a>
+              </p>
               
             </div>
 
