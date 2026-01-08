@@ -3,6 +3,7 @@ import Layout from "@/components/layout";
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Script from 'next/script'; // Importamos Script para manejo adecuado en Next.js
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -22,6 +23,11 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>Portfolio de Francisco</title>
+        <meta name="description" content="Portafolio de diseño y desarrollo web de Francisco. Muestra de proyectos de diseño gráfico, desarrollo web, fotografía y más." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {/* Incluir el script externo de Google Analytics */}
       <Script
         strategy="afterInteractive"
