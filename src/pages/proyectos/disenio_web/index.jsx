@@ -16,6 +16,7 @@ const index = () => {
   const [open10, setOpen10] = React.useState(false);
   const [open11, setOpen11] = React.useState(false);
   const [open12, setOpen12] = React.useState(false);
+  const [open13, setOpen13] = React.useState(false);
   return (
     <section className="items-center h-full bg-gradient-to-r from-indigo-800 to-gray-800">
       <div className="font-bold text-center text-white ">
@@ -321,6 +322,35 @@ const index = () => {
               />
               
               
+            </div>
+
+            {/* New Card */}
+            <div>
+              <button type="button" onClick={() => setOpen13(true)}>
+                <Image
+                  className="object-cover rounded-lg"
+                  src="/img/cover-sitiocoffe.png" 
+                  width={400}
+                  height={400}
+                  alt="Placeholder Image"
+                ></Image>
+              </button>
+              <Lightbox
+                open={open13}
+                close={() => setOpen13(false)}
+                slides={[
+                  { src: "/img/sitiowebcoffe.jpg" }, 
+                ]}
+              />
+              <p className="text-center text-white">
+                <a
+                  href="https://franciscorauda.github.io/sitio-web-con-IA/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio (Nuevo)
+                </a>
+              </p>
             </div>
 
 
