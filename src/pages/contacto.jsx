@@ -8,7 +8,7 @@ const contacto = () => {
   const correoDestino = "raudamejia08@outlook.com";
 
   return (
-    <section className="bg-gradient-to-r from-indigo-800 to-gray-800 h-auto lg:h-[55rem] items-center gap-2">
+    <section className="bg-gradient-to-r from-black to-blue-900 h-auto lg:h-[55rem] items-center gap-2">
       <div className="justify-center font-bold text-center text-white">
         <h1 className="py-4 pt-5 text-4xl font-bold text-center text-white lg:pt-20 bg-white-200">
           Contáctame

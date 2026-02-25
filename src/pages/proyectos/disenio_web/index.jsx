@@ -18,7 +18,7 @@ const index = () => {
   const [open12, setOpen12] = React.useState(false);
   const [open13, setOpen13] = React.useState(false);
   return (
-    <section className="items-center h-full bg-gradient-to-r from-indigo-800 to-gray-800 pb-20">
+    <section className="items-center h-full bg-gradient-to-r from-black to-blue-900 pb-20">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web

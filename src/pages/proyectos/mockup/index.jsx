@@ -12,7 +12,7 @@ const index = () => {
 
 
   return (
-    <section className="bg-gradient-to-r from-indigo-800 to-gray-800 h-[70rem] items-center">
+    <section className="bg-gradient-to-r from-black to-blue-900 h-[70rem] items-center">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[5rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem] ">
           Mock-up

@@ -4,7 +4,7 @@ import Perfil from "/public/img/foto-profesional.jpg";
 
 const Header = () => {
   return (
-    <section className="flex items-center justify-center py-32 text-white bg-gradient-to-r from-indigo-800 to-gray-800">
+    <section className="flex items-center justify-center py-32 text-white bg-gradient-to-r from-black to-blue-900">
       <div className="grid max-w-screen-xl grid-cols-1 py-10 mx-auto md:grid-cols-2 px-4 md:px-6 
                       gap-8 md:gap-16 lg:gap-24 
                       animate-fade-left animate-once animate-duration-[1000ms] animate-delay-[8ms] animate-ease-in-out animate-normal animate-fill-forwards">

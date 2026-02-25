@@ -18,7 +18,7 @@ const Imagenes = () => {
   };
 
   return (
-    <section className="pt-8 text-white bg-gradient-to-r from-indigo-800 to-gray-800">
+    <section className="pt-8 text-white bg-gradient-to-r from-black to-blue-900">
       <div className="font-bold text-center md:pt-1">
         <h2 className="mb-4 text-4xl md:text-5xl lg:text-6xl bold ">Imágenes</h2>
       </div>

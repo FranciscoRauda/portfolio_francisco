@@ -4,7 +4,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b md:static md:text-sm md:border-none bg-gradient-to-r from-indigo-800 to-gray-800">
+    <nav className="w-full border-b md:static md:text-sm md:border-none bg-gradient-to-r from-black to-blue-900">
       <div className="flex items-center justify-between max-w-screen-xl px-4 py-3 mx-auto md:px-6 md:py-4">
         <a href="/" className="flex items-center">
           <img

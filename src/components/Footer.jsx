@@ -6,7 +6,7 @@ const footers = () => {
 
     
     return (
-        <footer className="pt-10 bg-slate-800">
+        <footer className="pt-10 bg-gradient-to-r from-black to-blue-900">
             <div className="max-w-screen-xl px-4 mx-auto text-gray-600 md:px-8">
                 <div className="justify-between sm:flex">
                     <div className="space-y-6">

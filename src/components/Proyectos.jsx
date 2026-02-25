@@ -18,7 +18,7 @@ const Proyectos = () => {
   };
 
   return (
-    <section className="flex-col items-center bg-gradient-to-r from-indigo-800 to-gray-800 ">
+    <section className="flex-col items-center bg-gradient-to-r from-black to-blue-900 ">
       <div className="font-bold text-center text-white ">
         <h1 className="pt-2 mb-4 text-4xl text-center md:text-5xl lg:text-6xl md:pt-16 bg-white-200 md:text-center">
           Proyectos
