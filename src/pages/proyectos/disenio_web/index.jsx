@@ -17,8 +17,9 @@ const index = () => {
   const [open11, setOpen11] = React.useState(false);
   const [open12, setOpen12] = React.useState(false);
   const [open13, setOpen13] = React.useState(false);
+  const [open14, setOpen14] = React.useState(false);
   return (
-    <section className="items-center h-full bg-gradient-to-r from-black to-blue-900 pb-20">
+    <section className="items-center h-full pb-20 bg-gradient-to-r from-black to-blue-900">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
           Proyectos Web
@@ -286,6 +287,8 @@ const index = () => {
                 close={() => setOpen11(false)}
                 slides={[
                   { src: "/img/sitio-app.png" },
+                  { src: "/img/bienes.png" },
+                 
                  
                 ]}
               />
@@ -329,7 +332,7 @@ const index = () => {
               <button type="button" onClick={() => setOpen13(true)}>
                 <Image
                   className="object-cover rounded-lg"
-                  src="/img/cover-sitiocoffe.png" 
+                  src="/img/cover-sitiocoffe.png"
                   width={400}
                   height={400}
                   alt="Placeholder Image"
@@ -339,16 +342,47 @@ const index = () => {
                 open={open13}
                 close={() => setOpen13(false)}
                 slides={[
-                  { src: "/img/sitiowebcoffe.jpg" }, 
+                  { src: "/img/sitiowebcoffe.jpg" },
                 ]}
               />
               <p className="text-center text-white">
                 <a
-                  href="https://franciscorauda.github.io/sitio-web-con-IA/" 
+                  href="https://franciscorauda.github.io/sitio-web-con-IA/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Ir al sitio (Nuevo)
+                </a>
+              </p>
+            </div>
+
+
+            {/* Duplicated Card */}
+            <div>
+              <button type="button" onClick={() => setOpen14(true)}>
+                <Image
+                  className="object-cover rounded-lg"
+                  src="/img/cover-moviliaria.png"
+                  width={400}
+                  height={400}
+                  alt="Placeholder Image (Duplicated)"
+                ></Image>
+              </button>
+              <Lightbox
+                open={open14}
+                close={() => setOpen14(false)}
+                slides={[
+                  { src: "/img/bienes.png" },
+                  { src: "/img/wireframe.png" }
+                ]}
+              />
+              <p className="text-center text-white">
+                <a
+                  href="https://bienesraiceselsalvadorbelen.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ir al sitio 
                 </a>
               </p>
             </div>
