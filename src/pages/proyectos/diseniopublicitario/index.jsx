@@ -18,6 +18,7 @@ const index = () => {
   const [open12, setOpen12] = React.useState(false);
   const [open13, setOpen13] = React.useState(false);
   const [open14, setOpen14] = React.useState(false);
+  const [open15, setOpen15] = React.useState(false);
   return (
     <section className="bg-gradient-to-r from-black to-blue-900 h-[] items-center">
       <div className="font-bold text-center text-white ">
@@ -263,6 +264,23 @@ const index = () => {
                   open={open14}
                   close={() => setOpen14(false)}
                   slides={[{ src: "/img/electronic.png" }]}
+                />
+              </button>
+            </div>
+
+            <div>
+              <button type="button" onClick={() => setOpen15(true)}>
+                <Image
+                  className="max-w-full rounded-lg h-50"
+                  src="/img/cover-IA.png"
+                  width={400}
+                  height={400}
+                  
+                ></Image>
+                <Lightbox
+                  open={open15}
+                  close={() => setOpen15(false)}
+                  slides={[{ src: "/img/PUBLICIDAD IA.png" }]}
                 />
               </button>
             </div>
