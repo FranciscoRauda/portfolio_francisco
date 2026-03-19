@@ -18,6 +18,13 @@ const imagesData = [
     category: "foto",
   },
   {
+    id: 7,
+    src: "/img/innovacion-cover.png",
+    modalSrc: "/img/sitio2026.png",
+    alt: "Innovacion y Desarrollo",
+    category: "diseño web",
+  },
+  {
     id: 6,
     src: "/img/Targetas.jpg",
     alt: "Targetas",

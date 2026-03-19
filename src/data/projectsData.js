@@ -14,20 +14,6 @@ const projectsData = [
     description: "Ejemplo de diseño gráfico para campañas publicitarias.",
   },
   {
-    id: 3,
-    src: "/img/Doc.png",
-    alt: "Interfaz de Documentos",
-    category: "diseño web",
-    description: "Diseño de interfaz para gestión de documentos.",
-  },
-  {
-    id: 4,
-    src: "/img/tienda.jpg",
-    alt: "Tienda Online",
-    category: "diseño web",
-    description: "Desarrollo de una plataforma de comercio electrónico.",
-  },
-  {
     id: 6,
     src: "/img/landingpage1.png",
     alt: "Diseño y Desarrollo Web",

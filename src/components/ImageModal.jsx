@@ -20,7 +20,7 @@ const ImageModal = ({ image, onClose }) => {
           &times;
         </button>
         <Image
-          src={image.src}
+          src={image.modalSrc || image.src}
           alt={image.alt}
           layout="intrinsic" // Use intrinsic layout for full size within modal
           width={1000} // Max width for the modal image

@@ -88,7 +88,7 @@ const NavBar = () => {
                 rel="noopener noreferrer"
                 className="block py-3 text-lg font-bold text-center text-white rounded-md hover:bg-gray-700 md:hover:bg-transparent md:hover:text-gray-300"
               >
-                Cv
+                CV
               </a>
             </li>
           </ul>
