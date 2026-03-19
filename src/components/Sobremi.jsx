@@ -20,15 +20,15 @@ export const Sobremi = () => {
   
   return (
     <section className="text-center text-white bg-gradient-to-r from-black to-blue-900">
-      <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-[10rem] space-y-4 gap-10 animate-fade-up animate-twice animate-duration-[3000ms] "   >
-        <div >
-          <h1 className="text-4xl font-bold text-center bg-white-200 p " >
+      <div className="max-w-[80rem] mx-auto grid grid-cols-1  lg:grid-cols-2 items-start py-[10rem] space-y-4 gap-10 animate-fade-up animate-twice animate-duration-[3000ms] "   >
+        <div className="p-4 flex flex-col justify-start">
+          <h1 className="text-4xl font-bold text-center bg-white-200" >
           Conozcámonos
           </h1>
-          <p className="mt-10 text-justify animate-fade-right px-4 lg:px-0" >
+          <p className="mt-10 text-justify animate-fade-right px-4 lg:px-8" >
           Hola, Mi nombre es Daniel Mejía y soy diseñador gráfico web,
             bienvenido, será de mi agrado compartir contigo algunos de los
-            proyectos que he realizado a lo largo de mi formación académica y
+            proyectos que he realizado a lo largo de su formación académica y
             laboral, en el cual pongo en práctica mis conocimientos y
             creatividad para realizar proyectos altamente creativos y
             Funcionales. <br></br>
@@ -39,8 +39,8 @@ export const Sobremi = () => {
             a realizar todos mis proyectos.
           </p>
         </div>
-        <div>
-          <h1 className="text-4xl font-bold text-white">Habilidades</h1>
+        <div className="p-4 flex flex-col justify-start">
+          <h1 className="text-4xl font-bold text-white text-center">Habilidades</h1>
           <div className="grid grid-cols-2 gap-10 mt-10 md:grid-cols-3 lg:grid-cols-4 animate-fade-left ">
             <div className="flex flex-col items-center justify-center transition cursor-pointer hover:translate-y-2">
               <IoLogoHtml5 className="content-center text-[4rem] text-black bg-white p-1 rounded-sm"></IoLogoHtml5>

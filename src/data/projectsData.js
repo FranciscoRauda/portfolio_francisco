@@ -28,18 +28,18 @@ const projectsData = [
     description: "Desarrollo de una plataforma de comercio electrónico.",
   },
   {
-    id: 5,
-    src: "/img/web-deportes.png",
-    alt: "Diseño y Desarrollo Web",
-    category: "diseño web",
-    description: "Diseño y desarrollo de un sitio web para un club deportivo.",
-  },
-  {
     id: 6,
     src: "/img/landingpage1.png",
     alt: "Diseño y Desarrollo Web",
     category: "diseño web",
     description: "Diseño y desarrollo de una landing page.",
+  },
+  {
+    id: 7,
+    src: "/img/sitiowebcoffe.jpg",
+    alt: "Sitio Web Cafeteria",
+    category: "diseño web",
+    description: "Diseño de un sitio web para una cafetería.",
   },
 ];
 

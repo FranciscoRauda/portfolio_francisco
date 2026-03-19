@@ -12,22 +12,10 @@ const imagesData = [
     category: "diseño web",
   },
   {
-    id: 3,
-    src: "/img/levitacion.png",
-    alt: "Levitacion",
-    category: "foto",
-  },
-  {
-    id: 4,
-    src: "/img/canada.png",
-    alt: "Canada",
-    category: "foto",
-  },
-  {
     id: 5,
-    src: "/img/hamburgesa.jpg",
-    alt: "Hamburgesa",
-    category: "diseño web",
+    src: "/img/AUDIFONOS.jpg",
+    alt: "Audifonos",
+    category: "foto",
   },
   {
     id: 6,
