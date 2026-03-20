@@ -1,10 +1,10 @@
 const projectsData = [
   {
     id: 1,
-    src: "/img/reloj.jpg",
-    alt: "Reloj E-commerce",
+    src: "/img/AUDIFONOS-BLOTHOU.png",
+    alt: "Audifonos Inalambricos",
     category: "diseño web",
-    description: "Diseño de una tienda en línea para relojes.",
+    description: "Diseño de una tienda en línea para audifonos inalambricos.",
   },
   {
     id: 2,

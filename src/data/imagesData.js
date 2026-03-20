@@ -1,7 +1,7 @@
 const imagesData = [
   {
     id: 1,
-    src: "/img/zapato.png",
+    src: "/img/zona-nike.png",
     alt: "Zapato",
     category: "foto",
   },
