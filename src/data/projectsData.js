@@ -3,7 +3,7 @@ const projectsData = [
     id: 1,
     src: "/img/AUDIFONOS-BLOTHOU.png",
     alt: "Audifonos Inalambricos",
-    category: "diseño web",
+    category: "publicitario",
     description: "Diseño de una tienda en línea para audifonos inalambricos.",
   },
   {

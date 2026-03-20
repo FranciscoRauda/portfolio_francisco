@@ -3,7 +3,7 @@ const imagesData = [
     id: 1,
     src: "/img/zona-nike.png",
     alt: "Zapato",
-    category: "foto",
+    category: "publicitario",
   },
   {
     id: 2,
