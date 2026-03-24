@@ -18,6 +18,7 @@ const index = () => {
   const [open12, setOpen12] = React.useState(false);
   const [open13, setOpen13] = React.useState(false);
   const [open14, setOpen14] = React.useState(false);
+  const [open15, setOpen15] = React.useState(false);
   return (
     <section className="items-center h-full pb-20 bg-gradient-to-r from-black to-blue-900">
       <div className="font-bold text-center text-white ">
@@ -29,11 +30,11 @@ const index = () => {
       <div className="grid grid-cols-1 gap-5 mt-10 md:grid-cols-1 lg:grid-cols-1">
         <div className="flex items-center justify-center tex-center ">
           <div className="grid grid-cols-2 gap-2 md:grid-cols-3 ">
-            <div>
-              <button type="button" onClick={() => setOpen1(true)}>
+          <div>
+              <button type="button" onClick={() => setOpen15(true)}>
                 <Image
                   className="object-cover rounded-lg"
-                  src="/img/zapateria-cover.png"
+                  src="/img/innovacion-cover.png"
                   width={400}
                   height={400}
                   alt=""
@@ -41,47 +42,11 @@ const index = () => {
               </button>
 
               <Lightbox
-                open={open1}
-                close={() => setOpen1(false)}
-                slides={[{ src: "/img/ZAPATERIA.png" }]}
+                open={open15}
+                close={() => setOpen15(false)}
+                slides={[{ src: "/img/sitio2026.png" }]}
               />
             </div>
-            <div>
-              <button type="button" onClick={() => setOpen2(true)}>
-                <Image
-                  className="object-cover rounded-lg"
-                  width={400}
-                  height={400}
-                  src="/img/Deportivo-cover.png"
-                ></Image>
-              </button>
-              <Lightbox
-                open={open2}
-                close={() => setOpen2(false)}
-                slides={[{ src: "/img/Deportivo.png" }]}
-              />
-            </div>
-
-            <div>
-              <button type="button" onClick={() => setOpen3(true)}>
-                <Image
-                  className="object-cover rounded-lg"
-                  src="/img/doc-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open3}
-                close={() => setOpen3(false)}
-                slides={[{ src: "/img/Doc.png" },
-                        { src: "/img/doc2.jpg" }
-              
-              ]}
-              />
-            </div>
-
             <div>
               <button type="button" onClick={() => setOpen4(true)}>
                 <Image
