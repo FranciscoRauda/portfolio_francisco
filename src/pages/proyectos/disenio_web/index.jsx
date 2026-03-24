@@ -23,7 +23,7 @@ const index = () => {
     <section className="items-center h-full pb-20 bg-gradient-to-r from-black to-blue-900">
       <div className="font-bold text-center text-white ">
         <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
-          Proyectos Web
+          Proyectos
         </h1>
       </div>
 
@@ -271,26 +271,7 @@ const index = () => {
 
 
 
-            <div>
-              <button type="button" onClick={() => setOpen12(true)}>
-                <Image
-                  className="object-cover rounded-lg"
-                  src="/img/web-deportes.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open12}
-                close={() => setOpen12(false)}
-                slides={[
-                  { src: "/img/web-deportes.png" },
-                   ]}
-              />
-              
-              
-            </div>
+            
 
             {/* New Card */}
             <div>
