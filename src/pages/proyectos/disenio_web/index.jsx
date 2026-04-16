@@ -44,7 +44,10 @@ const index = () => {
               <Lightbox
                 open={open15}
                 close={() => setOpen15(false)}
-                slides={[{ src: "/img/sitio2026.png" }]}
+                slides={[{ src: "/img/sitio-innovacion.png" },
+                          { src: "/img/sitio2026.png" }
+                  
+                ]}
               />
             </div>
             <div>
@@ -231,7 +234,8 @@ const index = () => {
                 open={open10}
                 close={() => setOpen10(false)}
                 slides={[
-                  { src: "/img/panel.png" },
+                  { src: "/img/figma.png" },
+                  { src: "/img/panel.png" }
                  ]}
               />
              </div>
@@ -251,8 +255,8 @@ const index = () => {
                 open={open11}
                 close={() => setOpen11(false)}
                 slides={[
+                  { src: "/img/sitio-transporte.png" },
                   { src: "/img/sitio-app.png" },
-                  { src: "/img/bienes.png" },
                  
                  
                 ]}
@@ -288,7 +292,8 @@ const index = () => {
                 open={open13}
                 close={() => setOpen13(false)}
                 slides={[
-                  { src: "/img/sitiowebcoffe.jpg" },
+                  { src: "/img/sitio-ia.png" },
+                  { src: "/img/sitiowebcoffe.jpg" }
                 ]}
               />
               <p className="text-center text-white">
@@ -318,8 +323,8 @@ const index = () => {
                 open={open14}
                 close={() => setOpen14(false)}
                 slides={[
-                  { src: "/img/bienes.png" },
-                  { src: "/img/wireframe.png" }
+                  { src: "/img/bienes-raices.png" },
+                  { src: "/img/bienes.png" }
                 ]}
               />
               <p className="text-center text-white">
