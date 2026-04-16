@@ -30,26 +30,10 @@ const index = () => {
       <div className="grid grid-cols-1 gap-5 mt-10 md:grid-cols-1 lg:grid-cols-1">
         <div className="flex items-center justify-center tex-center ">
           <div className="grid grid-cols-2 gap-2 md:grid-cols-3 ">
-            <div>
-              <button type="button" onClick={() => setOpen1(true)}>
-                <Image
-                  className="max-w-full h-50 "
-                  src="/img/reloj.jpg"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-
-              <Lightbox
-                open={open1}
-                close={() => setOpen1(false)}
-                slides={[{ src: "/img/reloj.jpg" }]}
-              />
-            </div>
+            
             
             <div>
-              <button type="button" onClick={() => setOpen2(true)}>
+              <button type="button" onClick={() => setOpen1(true)}>
                 <Image
                   className="max-w-full h-50 "
                   src="/img/volvo.png"
@@ -60,15 +44,15 @@ const index = () => {
               </button>
 
               <Lightbox
-                open={open2}
-                close={() => setOpen2(false)}
+                open={open1}
+                close={() => setOpen1(false)}
                 slides={[{ src: "/img/volvo.png" }]}
               />
             </div>
            
 
             <div>
-              <button type="button" onClick={() => setOpen3(true)}>
+              <button type="button" onClick={() => setOpen2(true)}>
                 <Image
                   className="max-w-full rounded-lg h-50"
                   src="/img/coverfull.jpg"
@@ -78,8 +62,8 @@ const index = () => {
                 ></Image>
               </button>
               <Lightbox
-                open={open3}
-                close={() => setOpen3(false)}
+                open={open2}
+                close={() => setOpen2(false)}
                 slides={[{ src: "/img/full1.jpg" }]}
               />
             </div>
@@ -87,8 +71,8 @@ const index = () => {
             <div>
               <button type="button" onClick={() => setOpen4(true)}>
                 <Image
-                  className="max-w-full rounded-lg h-50 w-49"
-                  src="/img/coverz.png"
+                  className="max-w-full h-50 "
+                  src="/img/zona-nike.png"
                   width={400}
                   height={400}
                   alt=""
@@ -97,7 +81,7 @@ const index = () => {
               <Lightbox
                 open={open4}
                 close={() => setOpen4(false)}
-                slides={[{ src: "/img/zapato.png" }]}
+                slides={[{ src: "/img/zona-nike.png" }]}
               />
             </div>
 
