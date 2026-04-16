@@ -7,7 +7,8 @@ import Sobremi from "@/components/Sobremi";
 import Proyectos from "@/components/Proyectos";
 import Imagenes from "@/components/Imagenes";
 import Footer from "@/components/Footer";
-
+import Servicios from "@/components/Servicios"; // Import the new component
+import NewSectionPlaceholder from "@/components/NewSectionPlaceholder"; // Import the new placeholder component
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,6 +20,8 @@ export default function Home() {
        {/* <Seccion1/> */}
        <Sobremi/>
        <Proyectos/>
+       <NewSectionPlaceholder/> {/* Insert the new placeholder component here */}
+       <Servicios/>
         <Imagenes/>
       
         

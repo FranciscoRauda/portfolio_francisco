@@ -30,6 +30,9 @@ const Header = () => {
     <span class="block text-4xl font-bold text-white md:text-6xl relative overflow-hidden whitespace-nowrap border-r-2 border-white w-[21ch] animate-typewriter-role">
       Soy diseñador web.💻
     </span>
+    <span class="block text-lg font-normal text-gray-300 md:text-2xl mt-4">
+      Creo sitios web modernos, rápidos y enfocados en generar resultados para negocios.
+    </span>
   </h1>
 </div>
 
