@@ -19,7 +19,12 @@ const Proyectos = ({ project }) => {
 
   return (
     <article className="group overflow-hidden rounded-2xl border border-white/5 bg-surface-card shadow-card transition duration-300 hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-glow-blue-sm">
-      <div className="relative overflow-hidden">
+      <button
+        type="button"
+        className="relative block w-full cursor-pointer overflow-hidden p-0 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green"
+        onClick={() => openModal(project)}
+        aria-label={`Ver proyecto: ${project.title}`}
+      >
         <div
           className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface-card/90 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
           aria-hidden
@@ -30,7 +35,7 @@ const Proyectos = ({ project }) => {
           alt={project.title}
           className="h-[200px] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
         />
-      </div>
+      </button>
 
       <div className="p-5 md:p-6">
         <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">

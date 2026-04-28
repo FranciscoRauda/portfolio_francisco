@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 
 const ProjectModal = ({ project, onClose }) => {
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, []);
+
   if (!project) return null;
 
-  return (
+  const modal = (
     <div
       className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
       onClick={onClose}
@@ -49,6 +58,9 @@ const ProjectModal = ({ project, onClose }) => {
       </div>
     </div>
   );
+
+  if (typeof document === "undefined") return null;
+  return createPortal(modal, document.body);
 };
 
 export default ProjectModal;
