@@ -9,6 +9,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        surface: {
+          DEFAULT: '#0a0f1a',
+          card: '#121a2b',
+          elevated: '#1a2438',
+        },
+        brand: {
+          blue: '#2563eb',
+          glow: '#3b82f6',
+          green: '#4ade80',
+        },
+      },
+      boxShadow: {
+        'glow-blue': '0 0 60px -12px rgba(59, 130, 246, 0.55)',
+        'glow-blue-sm': '0 0 40px -16px rgba(59, 130, 246, 0.45)',
+        card: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

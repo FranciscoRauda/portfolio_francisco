@@ -1,118 +1,73 @@
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import PortfolioItemCard from "@/components/PortfolioItemCard";
 
-const index = () => {
-  const [open1, setOpen1] = React.useState(false);
-  const [open2, setOpen2] = React.useState(false);
-  const [open3, setOpen3] = React.useState(false);
-  const [open4, setOpen4] = React.useState(false);
-  const [open5, setOpen5] = React.useState(false);
+const items = [
+  {
+    title: "Mockup producto",
+    subtitle: "Presentación 3D",
+    cover: "/img/cover-mock2.png",
+    slides: [{ src: "/img/mock-2.jpg" }],
+  },
+  {
+    title: "Vaso",
+    subtitle: "Packaging",
+    cover: "/img/cover-vaso.png",
+    slides: [{ src: "/img/Mockup-p.jpg" }],
+  },
+  {
+    title: "Cap Smile",
+    subtitle: "Branding aplicado",
+    cover: "/img/smile-cover.png",
+    slides: [{ src: "/img/CAPSSMILE.jpg" }],
+  },
+  {
+    title: "Camisetas",
+    subtitle: "Textil",
+    cover: "/img/camisas-cover.png",
+    slides: [{ src: "/img/camisas-m.jpg" }],
+  },
+  {
+    title: "Lata",
+    subtitle: "Producto",
+    cover: "/img/cover-lata.png",
+    slides: [{ src: "/img/Lata.png" }],
+  },
+];
 
+const Page = () => {
+  const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-gradient-to-r from-black to-blue-900 h-[70rem] items-center">
-      <div className="font-bold text-center text-white ">
-        <h1 className="text-center pt-[5rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem] ">
-          Mock-up
-        </h1>
+    <section className="min-h-screen bg-surface px-4 py-16 md:px-6 md:py-24">
+      <div className="mx-auto mb-14 max-w-6xl text-center">
+        <h1 className="text-3xl font-bold text-white md:text-4xl">Mockups</h1>
+        <p className="mx-auto mt-3 max-w-xl text-gray-400">
+          Producto final, packaging y presentaciones visuales.
+        </p>
       </div>
-      <div className="grid grid-cols-1 gap-5 mt-10 md:grid-cols-1 lg:grid-cols-1">
-        <div class="flex items-center justify-center tex-center ">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-2 ">
-            <div>
-              <button type="button" onClick={() => setOpen1(true)}>
-                <Image
-                  class="h-50 max-w-full "
-                  src="/img/cover-mock2.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
 
-              <Lightbox
-                open={open1}
-                close={() => setOpen1(false)}
-                slides={[{ src: "/img/mock-2.jpg" }]}
-              />
-            </div>
-            <div>
-              <button type="button" onClick={() => setOpen2(true)}>
-                <Image
-                  className="object-cover h-full rounded-lg"
-                  class="h-50 max-w-full object"
-                  width={400}
-                  height={400}
-                  src="/img/cover-vaso.png"
-                ></Image>
-              </button>
-              <Lightbox
-                open={open2}
-                close={() => setOpen2(false)}
-                slides={[{ src: "/img/Mockup-p.jpg" }]}
-              />
-            </div>
-
-            <div>
-              <button type="button" onClick={() => setOpen3(true)}>
-                <Image
-                  class="h-50 max-w-full rounded-lg"
-                  src="/img/smile-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open3}
-                close={() => setOpen3(false)}
-                slides={[{ src: "/img/CAPSSMILE.jpg" }]}
-              />
-            </div>
-
-            <div>
-              <button type="button" onClick={() => setOpen4(true)}>
-                <Image
-                  class="h-50 w-49 max-w-full rounded-lg"
-                  src="/img/camisas-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open4}
-                close={() => setOpen4(false)}
-                slides={[{ src: "/img/camisas-m.jpg" }]}
-              />
-            </div>
-
-
-            <div>
-              <button type="button" onClick={() => setOpen5(true)}>
-                <Image
-                  class="h-50 w-49 max-w-full rounded-lg"
-                  src="/img/cover-lata.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open5}
-                close={() => setOpen5(false)}
-                slides={[{ src: "/img/Lata.png" }]}
-              />
-            </div>
-
-            <div></div>
-          </div>
-        </div>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map((item, index) => (
+          <PortfolioItemCard
+            key={item.title + index}
+            imageSrc={item.cover}
+            title={item.title}
+            subtitle={item.subtitle}
+            onOpen={() => setOpenIndex(index)}
+            priority={index < 2}
+          />
+        ))}
       </div>
+
+      <Lightbox
+        open={openIndex !== null}
+        close={() => setOpenIndex(null)}
+        slides={openIndex !== null ? items[openIndex].slides : []}
+      />
     </section>
   );
 };
 
-export default index;
+export default Page;

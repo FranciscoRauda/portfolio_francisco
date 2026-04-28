@@ -1,153 +1,81 @@
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import PortfolioItemCard from "@/components/PortfolioItemCard";
 
+const items = [
+  {
+    title: "Montaje I",
+    subtitle: "Edición y composición",
+    cover: "/img/foto-cover.png",
+    slides: [{ src: "/img/MONTAJE1.png" }],
+  },
+  {
+    title: "Montaje II",
+    subtitle: "Retoque fotográfico",
+    cover: "/img/Fotomon-cover.png",
+    slides: [{ src: "/img/MONTAJE2.png" }],
+  },
+  {
+    title: "Montaje III",
+    subtitle: "Composición creativa",
+    cover: "/img/cover-mon3.png",
+    slides: [{ src: "/img/MONTAJE3.jpg" }],
+  },
+  {
+    title: "Automotriz",
+    subtitle: "Fotografía de producto",
+    cover: "/img/Auto-cover.png",
+    slides: [{ src: "/img/Auto.png" }],
+  },
+  {
+    title: "Moda",
+    subtitle: "Sesión y edición",
+    cover: "/img/fotomoda-cover.png",
+    slides: [{ src: "/img/fotomoda.jpg" }],
+  },
+  {
+    title: "Nike — luz",
+    subtitle: "Concept y estudio",
+    cover: "/img/Nike-cover.png",
+    slides: [{ src: "/img/nike light.png" }],
+  },
+];
 
-const index = () => {
- 
-  const [open1, setOpen1] = React.useState(false);
-  const [open2, setOpen2] = React.useState(false);
-  const [open3, setOpen3] = React.useState(false);
-  const [open4, setOpen4] = React.useState(false);
-  const [open5, setOpen5] = React.useState(false);
-  const [open6, setOpen6] = React.useState(false);
+const Page = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
   return (
-    <section className="bg-gradient-to-r from-black to-blue-900 h-[70rem] items-center">
-      <div className="font-bold text-center text-white ">
-        <h1 className="text-center pt-[4rem] ptfont-bold tmtext-4xl bg-white-200 ytext-center text-[4rem]  ">
+    <section className="min-h-screen bg-surface px-4 py-16 md:px-6 md:py-24">
+      <div className="mx-auto mb-14 max-w-6xl text-center">
+        <h1 className="text-3xl font-bold text-white md:text-4xl">
           Fotografía
         </h1>
+        <p className="mx-auto mt-3 max-w-xl text-gray-400">
+          Montajes, producto y retrato con postproducción.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-5 mt-10 md:grid-cols-1 lg:grid-cols-1">
-        <div class="flex items-center justify-center tex-center ">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-2 ">
-            <div>
-              <button type="button" onClick={() => setOpen1(true)}>
-                <Image
-                  class="h-50 max-w-full "
-                  src="/img/foto-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-
-              <Lightbox
-                open={open1}
-                close={() => setOpen1(false)}
-                slides={[{ src: "/img/MONTAJE1.png" }]}
-              />
-            </div>
-            <div>
-              <button type="button" onClick={() => setOpen2(true)}>
-                <Image
-                  className="object-cover h-full rounded-lg"
-                  class="h-50 max-w-full object"
-                  width={400}
-                  height={400}
-                  src="/img/Fotomon-cover.png"
-                ></Image>
-              </button>
-              <Lightbox
-                open={open2}
-                close={() => setOpen2(false)}
-                slides={[{ src: "/img/MONTAJE2.png" }]}
-              />
-            </div>
-
-            <div>
-              <button type="button" onClick={() => setOpen3(true)}>
-                <Image
-                  class="h-50 max-w-full rounded-lg"
-                  src="/img/cover-mon3.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open3}
-                close={() => setOpen3(false)}
-                slides={[{ src: "/img/MONTAJE3.jpg" }]}
-              />
-            </div>
-
-            <div>
-              <button type="button" onClick={() => setOpen4(true)}>
-                <Image
-                  class="h-50 w-49 max-w-full rounded-lg"
-                  src="/img/Auto-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open4}
-                close={() => setOpen4(false)}
-                slides={[
-                  { src: "/img/Auto.png" },
-                 
-                ]}
-              />
-              
-            </div>
-            
-            <div>
-              <button type="button" onClick={() => setOpen5(true)}>
-                <Image
-                  class="h-50 w-49 max-w-full rounded-lg"
-                  src="/img/fotomoda-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open5}
-                close={() => setOpen5(false)}
-                slides={[
-                  { src: "/img/fotomoda.jpg" },
-                 
-                ]}
-              />
-              
-            </div>
-            <div>
-              <button type="button" onClick={() => setOpen6(true)}>
-                <Image
-                  class="h-50 w-49 max-w-full rounded-lg"
-                  src="/img/Nike-cover.png"
-                  width={400}
-                  height={400}
-                  alt=""
-                ></Image>
-              </button>
-              <Lightbox
-                open={open6}
-                close={() => setOpen6(false)}
-                slides={[
-                  { src: "/img/nike light.png" },
-                 
-                ]}
-              />
-              
-            </div>
-
-
-
-            
-
-            
-
-            <div></div>
-          </div>
-        </div>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map((item, index) => (
+          <PortfolioItemCard
+            key={item.title + index}
+            imageSrc={item.cover}
+            title={item.title}
+            subtitle={item.subtitle}
+            onOpen={() => setOpenIndex(index)}
+            priority={index < 2}
+          />
+        ))}
       </div>
+
+      <Lightbox
+        open={openIndex !== null}
+        close={() => setOpenIndex(null)}
+        slides={openIndex !== null ? items[openIndex].slides : []}
+      />
     </section>
   );
 };
 
-export default index;
+export default Page;

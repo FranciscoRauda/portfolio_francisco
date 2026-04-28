@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import projectsData from "../data/projectsData";
-import ProjectModal from "./ProjectModal"; // Will create this component next
+import ProjectModal from "./ProjectModal";
 
-const Proyectos = () => {
+const Proyectos = ({ project }) => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = (project) => {
-    setSelectedProject(project);
+  const openModal = (projectData) => {
+    setSelectedProject(projectData);
     setIsModalOpen(true);
   };
 
@@ -17,34 +15,43 @@ const Proyectos = () => {
     setIsModalOpen(false);
   };
 
+  const stack = project.stack || "Diseño UX/UI + Frontend";
+
   return (
-    <section className="flex-col items-center bg-gradient-to-r from-black to-blue-900 ">
-      <div className="font-bold text-center text-white ">
-        <h1 className="pt-2 mb-4 text-4xl text-center md:text-5xl lg:text-6xl md:pt-16 bg-white-200 md:text-center">
-          Proyectos
-        </h1>
+    <article className="group overflow-hidden rounded-2xl border border-white/5 bg-surface-card shadow-card transition duration-300 hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-glow-blue-sm">
+      <div className="relative overflow-hidden">
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface-card/90 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
+          aria-hidden
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={project.src || "/project.jpg"}
+          alt={project.title}
+          className="h-[200px] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+        />
       </div>
 
-      <div className="grid items-center max-w-screen-xl grid-cols-1 gap-3 px-4 py-8 mx-auto md:grid-cols-2 lg:grid-cols-4 lg:px-10 md:py-12 animate-fade-up animate-twice animate-duration-[3000ms]">
-        {projectsData.map((project) => (
-          <div key={project.id} className="w-full text-center cursor-pointer mb-3" onClick={() => openModal(project)}>
-            <div className="relative w-full h-64 mb-1">
-              <Image
-                className="object-cover rounded-lg"
-                src={project.src}
-                alt={project.alt}
-                layout="fill"
-              />
-            </div>
-            <p className="text-white text-lg font-medium capitalize">{project.category}</p>
-          </div>
-        ))}
+      <div className="p-5 md:p-6">
+        <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">
+          {project.title}
+        </h3>
+
+        <p className="mb-5 text-sm text-gray-400">{stack}</p>
+
+        <button
+          type="button"
+          className="text-sm font-semibold text-brand-green transition hover:text-brand-green/90 hover:underline"
+          onClick={() => openModal(project)}
+        >
+          Ver proyecto →
+        </button>
       </div>
 
-      {isModalOpen && selectedProject && (
+      {isModalOpen && selectedProject ? (
         <ProjectModal project={selectedProject} onClose={closeModal} />
-      )}
-    </section>
+      ) : null}
+    </article>
   );
 };
 
