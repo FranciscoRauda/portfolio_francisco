@@ -25,7 +25,7 @@ const Header = () => {
           </p>
 
           <h1 className="mb-3 text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
-            Francisco Mejía
+            Daniel Mejia
           </h1>
 
           <h2 className="mb-5 text-xl font-semibold text-brand-glow md:text-2xl">
@@ -90,7 +90,7 @@ const Header = () => {
           <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-glow-blue ring-1 ring-white/5">
             <Image
               src={Perfil}
-              alt="Francisco Mejía - Web Designer & Frontend Developer"
+              alt="Daniel Mejia - Web Designer & Frontend Developer"
               className="aspect-[4/5] w-full object-cover"
               width={500}
               height={625}

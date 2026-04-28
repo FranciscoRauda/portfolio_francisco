@@ -24,8 +24,8 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Portfolio de Francisco</title>
-        <meta name="description" content="Portafolio de diseño y desarrollo web de Francisco. Muestra de proyectos de diseño gráfico, desarrollo web, fotografía y más." />
+        <title>Portfolio de Daniel</title>
+        <meta name="description" content="Portafolio de diseño y desarrollo web de Daniel Mejia. Muestra de proyectos de diseño gráfico, desarrollo web, fotografía y más." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Incluir el script externo de Google Analytics */}
