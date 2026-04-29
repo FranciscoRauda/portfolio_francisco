@@ -13,8 +13,8 @@ const items = [
   {
     title: "Campaña gráfica",
     subtitle: "Diseño publicitario",
-    cover: "/img/coverfull.jpg",
-    slides: [{ src: "/img/full1.jpg" }],
+    cover: "/img/bebida-refrescante.png",
+    slides: [{ src: "/img/bebida-refrescante.png" }],
   },
   {
     title: "Nike — Zona",

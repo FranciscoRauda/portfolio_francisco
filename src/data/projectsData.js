@@ -11,7 +11,7 @@ const projectsData = [
   {
     id: 2,
     title: "Campaña publicitaria",
-    src: "/img/full1.jpg",
+    src: "/img/bebida-refrescante.png",
     alt: "Diseño Publicitario",
     category: "publicitario",
     description: "Ejemplo de diseño gráfico para campañas publicitarias.",
