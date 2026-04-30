@@ -12,6 +12,11 @@ const videos = [
     subtitle: "Edición y motion",
     embed: "https://www.youtube.com/embed/Ng1RF-jG6Qw?si=svCKOkQ0fOvv3V37",
   },
+  {
+    title: "Proyecto audiovisual III",
+    subtitle: "Short — YouTube",
+    embed: "https://www.youtube.com/embed/ZnQmrROQBnc",
+  },
 ];
 
 const Page = () => {
