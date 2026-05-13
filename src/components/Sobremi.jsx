@@ -10,27 +10,23 @@ import { SiFigma } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const skillBars = [
-  { label: "HTML / CSS", pct: 60 },
-  { label: "JavaScript", pct: 50 },
-  { label: "React", pct: 25 },
-  { label: "UI/UX Design", pct: 50 },
+const skillLevels = [
+  { name: "HTML/CSS", detail: "Nivel avanzado · dominio sólido" },
+  { name: "JavaScript", detail: "Nivel intermedio · uso frecuente" },
+  { name: "React", detail: "Nivel básico · proyectos personales" },
+  {
+    name: "UI/UX Design",
+    detail: "Nivel intermedio · diseño y prototipado",
+  },
 ];
 
-function SkillBar({ label, pct }) {
+function SkillLevel({ name, detail }) {
   return (
-    <div>
-      <div className="mb-1.5 flex justify-between text-sm">
-        <span className="text-gray-300">{label}</span>
-        <span className="font-medium text-brand-glow">{pct}%</span>
-      </div>
-      <div className="h-2 overflow-hidden rounded-full bg-surface-elevated/80">
-        <div
-          className="h-full rounded-full bg-gradient-to-r from-brand-blue to-brand-glow transition-all duration-700"
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-    </div>
+    <p className="text-sm leading-snug">
+      <span className="font-semibold text-gray-200">{name}</span>
+      <span className="text-gray-600"> — </span>
+      <span className="text-gray-400">{detail}</span>
+    </p>
   );
 }
 
@@ -110,9 +106,9 @@ const Sobremi = () => {
         <aside className="flex flex-col gap-6" data-aos="fade-up" data-aos-delay="100">
           <div className="rounded-2xl border border-white/5 bg-surface-card p-6 shadow-card">
             <h3 className="mb-5 text-lg font-bold text-white">Habilidades</h3>
-            <div className="flex flex-col gap-5">
-              {skillBars.map((s) => (
-                <SkillBar key={s.label} {...s} />
+            <div className="flex flex-col gap-4">
+              {skillLevels.map((s) => (
+                <SkillLevel key={s.name} {...s} />
               ))}
             </div>
           </div>
