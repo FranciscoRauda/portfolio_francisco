@@ -16,7 +16,9 @@ const Servicios = () => {
     },
     {
       icon: <FaShoppingCart className="mb-4 text-5xl text-brand-glow" />,
-      title: "Desarrollo tiendas virtuales funcionales para que puedas vender tus productos de forma profesional en internet.",
+      title: "Desarrollo de e-commerce",
+      description:
+        "Desarrollo tiendas virtuales funcionales para que puedas vender tus productos de forma profesional en internet.",
     },
     {
       icon: <FaPaintBrush className="mb-4 text-5xl text-brand-glow" />,
