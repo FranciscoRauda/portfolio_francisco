@@ -29,6 +29,13 @@ const items = [
     ],
   },
   {
+    title: "E-commerce",
+    subtitle: "Tienda en línea — UI",
+    cover: "/img/E-comerce.png",
+    slides: [{ src: "/img/E-comerce.png" }],
+    href: "https://franciscorauda.github.io/Ecomerce/",
+  },
+  {
     title: "Ferretería Fénix",
     subtitle: "Presencia web",
     cover: "/img/ferreteria-cover.png",
