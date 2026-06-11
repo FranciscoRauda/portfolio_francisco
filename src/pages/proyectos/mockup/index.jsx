@@ -7,30 +7,40 @@ const items = [
   {
     title: "Mockup producto",
     subtitle: "Presentación 3D",
+    description:
+      "Mockup tridimensional para mostrar el producto final con acabado realista.",
     cover: "/img/cover-mock2.png",
     slides: [{ src: "/img/mock-2.jpg" }],
   },
   {
     title: "Vaso",
     subtitle: "Packaging",
+    description:
+      "Presentación de packaging en vaso con branding visible y contexto de uso.",
     cover: "/img/cover-vaso.png",
     slides: [{ src: "/img/Mockup-p.jpg" }],
   },
   {
     title: "Cap Smile",
     subtitle: "Branding aplicado",
+    description:
+      "Gorra con identidad de marca aplicada para visualizar el producto en contexto.",
     cover: "/img/smile-cover.png",
     slides: [{ src: "/img/CAPSSMILE.jpg" }],
   },
   {
     title: "Camisetas",
     subtitle: "Textil",
+    description:
+      "Mockup textil que muestra el diseño impreso en prenda con perspectiva natural.",
     cover: "/img/camisas-cover.png",
     slides: [{ src: "/img/camisas-m.jpg" }],
   },
   {
     title: "Lata",
     subtitle: "Producto",
+    description:
+      "Presentación de lata con etiqueta diseñada y acabado fotográfico profesional.",
     cover: "/img/cover-lata.png",
     slides: [{ src: "/img/Lata.png" }],
   },
@@ -55,6 +65,7 @@ const Page = () => {
             imageSrc={item.cover}
             title={item.title}
             subtitle={item.subtitle}
+            description={item.description}
             onOpen={() => setOpenIndex(index)}
             priority={index < 2}
           />

@@ -15,6 +15,7 @@ export default function PortfolioItemCard({
   imageAlt = "",
   title,
   subtitle,
+  description,
   href,
   onOpen,
   linkLabel = "Explorar →",
@@ -54,7 +55,12 @@ export default function PortfolioItemCard({
     <div className="p-5 md:p-6">
       <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">{title}</h3>
       {subtitle ? (
-        <p className="mb-5 text-sm text-gray-400">{subtitle}</p>
+        <p className="mb-2 text-sm font-medium text-brand-glow/90">{subtitle}</p>
+      ) : null}
+      {description ? (
+        <p className="mb-5 text-sm leading-relaxed text-gray-400">{description}</p>
+      ) : subtitle ? (
+        <div className="mb-5" />
       ) : null}
 
       {href ? (

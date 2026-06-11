@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 const skillLevels = [
   { name: "HTML/CSS", detail: "Nivel avanzado · dominio sólido" },
   { name: "JavaScript", detail: "Nivel intermedio · uso frecuente" },
-  { name: "React", detail: "Nivel básico · proyectos personales" },
+  { name: "React", detail: "Nivel intermedio · proyectos personales" },
   {
     name: "UI/UX Design",
     detail: "Nivel intermedio · diseño y prototipado",

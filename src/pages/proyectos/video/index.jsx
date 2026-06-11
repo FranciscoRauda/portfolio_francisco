@@ -5,16 +5,22 @@ const videos = [
   {
     title: "Proyecto audiovisual I",
     subtitle: "Edición y motion",
+    description:
+      "Pieza audiovisual con edición dinámica, ritmo visual y transiciones fluidas.",
     embed: "https://www.youtube.com/embed/z1kyd9Y58Dk?si=lkMRsiP1C7o1vGB9",
   },
   {
     title: "Proyecto audiovisual II",
     subtitle: "Edición y motion",
+    description:
+      "Video con montaje narrativo y tratamiento gráfico para reforzar el mensaje.",
     embed: "https://www.youtube.com/embed/Ng1RF-jG6Qw?si=svCKOkQ0fOvv3V37",
   },
   {
     title: "Proyecto audiovisual III",
     subtitle: "Short — YouTube",
+    description:
+      "Formato corto optimizado para redes con ritmo ágil y contenido visual directo.",
     embed: "https://www.youtube.com/embed/ZnQmrROQBnc",
   },
 ];
@@ -35,6 +41,7 @@ const Page = () => {
             key={v.title}
             title={v.title}
             subtitle={v.subtitle}
+            description={v.description}
             showCta={false}
           >
             <div className="aspect-video w-full bg-black">
