@@ -80,9 +80,9 @@ const NavBar = () => {
               if (hash) {
                 return (
                   <li key={href}>
-                    <a href={href} className="inline-block">
+                    <Link href={href} className="inline-block">
                       {renderLinkInner(label, false)}
-                    </a>
+                    </Link>
                   </li>
                 );
               }
@@ -187,13 +187,13 @@ const NavBar = () => {
               if (hash) {
                 return (
                   <li key={href}>
-                    <a
+                    <Link
                       href={href}
                       className="block rounded-lg px-4 py-3 text-center text-lg text-white hover:bg-white/5"
                       onClick={() => setIsOpen(false)}
                     >
                       {label}
-                    </a>
+                    </Link>
                   </li>
                 );
               }

@@ -116,6 +116,19 @@ const items = [
     slides: [{ src: "/img/bienes-raices.png" }, { src: "/img/bienes.png" }],
     href: "https://bienesraiceselsalvadorbelen.com/",
   },
+  {
+    title: "Diseño clínica dental Dr. Estrada",
+    subtitle: "Sitio web para clínica dental",
+    description:
+      "Diseño web para presentar los servicios y la información de la clínica dental Dr. Estrada.",
+    cover: "/img/clinica-dental-dr-estrada.png",
+    slides: [
+      { src: "/img/clinica-dental-dr-estrada.png" },
+      { src: "/img/clinica-dental-dr-estrada-2.png" },
+      { src: "/img/clinica-dental-dr-estrada-3.png" },
+    ],
+    href: "https://www.centrodeespecialidadesdentales.com/",
+  },
 ];
 
 const Page = () => {

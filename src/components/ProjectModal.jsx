@@ -55,6 +55,16 @@ const ProjectModal = ({ project, onClose }) => {
             {project.description}
           </p>
         ) : null}
+        {project.href ? (
+          <a
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 block text-center text-sm font-semibold text-brand-green transition hover:underline"
+          >
+            Visitar sitio web →
+          </a>
+        ) : null}
       </div>
     </div>
   );

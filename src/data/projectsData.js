@@ -35,6 +35,17 @@ const projectsData = [
     description: "Diseño de un sitio web para una cafetería.",
     stack: "Diseño web + WordPress",
   },
+  {
+    id: 8,
+    title: "Clínica dental Dr. Estrada",
+    src: "/img/clinica-dental-dr-estrada.png",
+    alt: "Sitio web del Centro de Especialidades Dentales",
+    category: "diseño web",
+    description:
+      "Diseño de sitio web para el Centro de Especialidades Dentales del Dr. Estrada.",
+    stack: "Diseño web + Frontend",
+    href: "https://www.centrodeespecialidadesdentales.com/",
+  },
 ];
 
 export default projectsData;

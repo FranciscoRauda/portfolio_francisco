@@ -85,7 +85,7 @@ const Sobremi = () => {
 
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
             <div className="rounded-xl border border-white/5 bg-surface-elevated/60 p-4 text-center">
-              <p className="text-xl font-bold text-brand-glow">+3</p>
+              <p className="text-xl font-bold text-brand-glow">+6</p>
               <p className="text-xs text-gray-400">Proyectos reales</p>
             </div>
             <div className="rounded-xl border border-white/5 bg-surface-elevated/60 p-4 text-center">
