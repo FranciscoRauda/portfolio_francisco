@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import Sobremi from "@/components/Sobremi";
 import Proyectos from "@/components/Proyectos";
-import Imagenes from "@/components/Imagenes";
 import Servicios from "@/components/Servicios";
 import NewSectionPlaceholder from "@/components/NewSectionPlaceholder";
+import WhyWorkWithMe from "@/components/WhyWorkWithMe";
 import projectsData from "../data/projectsData";
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
       <NewSectionPlaceholder />
       <Servicios />
-      <Imagenes />
+      <WhyWorkWithMe />
     </>
   );
 }
